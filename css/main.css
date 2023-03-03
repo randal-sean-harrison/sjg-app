@@ -1,0 +1,103 @@
+:root {
+  /* root color variables */
+  --bright-blue: #007bff;
+  --light-grey-body: #fafafa;
+  --white: white;
+  --body-font: #666;
+  --slate-gray: lightslategray;
+  --silver: silver;
+  --graphite: #506578;
+  --trench-blue: #406885;
+  --green-grey: #e0e1e2;
+  --light-blue: #d0e9fe;
+  --alice-blue: aliceblue;
+  --chocolate: rgb(210, 105, 30);
+  --page-bg: #f0f3f6;
+  --unemployed-red: #db4c3f;
+  --employee-green: mediumseagreen;
+  --manager-purple: mediumorchid;
+  --owner-blue: dodgerblue;
+  --skyscraper-green: #d3d9d7;
+  --house-green: green;
+}
+
+html {
+  font-size: 16px;
+  box-sizing: border-box;
+}
+
+body {
+  box-sizing: border-box;
+  font-family: 'Albert Sans', Helvetica, Arial, sans-serif;
+  background: var(--page-bg);
+  color: var(--graphite);
+  font-size: 1.05rem;
+  padding-bottom: 5rem;
+}
+
+header {
+   background-color: var(--trench-blue);
+}
+
+p, li, td, tr {
+  color: var(--body-font);
+  font-size: 1.1rem !important;
+  font-family: 'Albert Sans', Helvetica, Arial, sans-serif;
+}
+
+#homepage-nav li {
+   font-size: 1.5rem !important;
+
+}
+
+.pointer {
+   cursor: pointer; 
+}
+
+.text-large {
+   font-size: 1.25rem;
+}
+
+.text-larger {
+   font-size: 1.5rem;
+}
+
+.alert-info {
+   background: var(--green-grey);
+   border-radius: .5em;
+   border: none;
+   box-shadow: none;
+}
+
+/* colors ------------------------------- */
+.chocolate {
+   color: var(--chocolate);
+}
+
+.bright-blue {
+   color: var(--bright-blue);
+}
+
+.trench-blue {
+   color: var(--trench-blue);
+}
+
+.bg-trench-blue {
+   background: var(--trench-blue);
+}
+
+.bg-light-blue {
+   background: var(--light-blue); 
+}
+
+.custom-select {
+  font-weight: 400;
+  /* color: #495057 !important; */
+  vertical-align: middle;
+  background: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 4 5'%3e%3cpath fill='%23ffffff' d='M2 0L0 2h4zm0 5L0 3h4z'/%3e%3c/svg%3e") no-repeat right 0.75rem center/8px 10px;
+  background-color: #fff;
+  border-radius: 0.25rem;
+  -webkit-appearance: none !important;
+  -moz-appearance: none !important;
+  appearance: none !important;
+}
