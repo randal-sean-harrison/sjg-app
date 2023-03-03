@@ -1,0 +1,29 @@
+
+
+
+
+#die-roll-result {
+  z-index: 1000;
+}
+
+#die-roll-result span {
+  padding: 2.3rem 2.8rem;
+}
+
+.hoisted {
+  margin-top: -17rem;
+  height: 1.5rem;
+}
+
+
+@media only screen and (max-width: 500px) {
+
+  .dice-variable-font {
+    font-size: 95%;
+  }
+
+  .btn-plus-sign {
+    display: none;
+  }
+
+}

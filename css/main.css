@@ -70,6 +70,22 @@ p, li, td, tr {
 }
 
 /* colors ------------------------------- */
+.bg-red {
+  background: var(--unemployed-red);
+}
+
+.bg-green {
+  background: var(--employee-green);
+}
+
+.bg-purple {
+  background: var(--manager-purple);
+}
+
+.bg-blue {
+  background: var(--owner-blue);
+}
+
 .chocolate {
    color: var(--chocolate);
 }
@@ -84,6 +100,10 @@ p, li, td, tr {
 
 .bg-trench-blue {
    background: var(--trench-blue);
+}
+
+.bg-green-grey {
+   background: var(--green-grey);
 }
 
 .bg-light-blue {

@@ -32,25 +32,94 @@
 
    <!-- Main local styles -->
    <link rel="stylesheet" href="css/main.css" />
+   <link rel="stylesheet" href="css/dice.css" />
 
    <title>Social Justice Game</title>
 </head>
 
 <body>
    <!-- Main content here -->
-  <header>
+   <header>
       <img src="img/mobile-header.png" class="img-fluid" alt="Social Justice Game logo" />
       <div class="bg-light p-1">
-         <h2 class="chocolate text-center mt-3 mb-2 display-4">Title</h2>
+         <h2 class="chocolate text-center mt-3 mb-2 display-4">Dice</h2>
       </div>
    </header>
 
-   <main id="wrapper" class="container-fluid m-0 p-3">
+   <main id="wrapper" class="container-fluid m-0 p-0">
       <!-- content here -->
+
+      <div id="die-roller">
+         <div class="row">
+            <!-- 4-sided die -->
+            <div class="pointer dicey col-6 border-0 rounded-0 bg-red p-5" data-die="4">
+               <h4 class="mb-4 dice-variable-font text-center text-white">
+                  <strong>Unemployed</strong>
+               </h4>
+               <p class="text-center">
+                  <i class="text-white fad fa-fw fa-3x fa-dice-d4"></i>
+               </p>
+               <p class="text-center dice-variable-font text-larger text-white">
+                  <em>four-sided</em>
+               </p>
+            </div>
+
+            <!-- 6-sided die -->
+            <div class="pointer dicey col-6 border-0 rounded-0 bg-green p-5" data-die="6">
+               <h4 class="mb-4 dice-variable-font text-center text-white">
+                  <strong>Employee</strong>
+               </h4>
+               <p class="text-center">
+                  <i class="text-white fad fa-fw fa-3x fa-dice-d6"></i>
+               </p>
+               <p class="text-center dice-variable-font text-larger text-white">
+                  <em>six-sided</em>
+               </p>
+            </div>
+         </div>
+
+         <div class="row">
+            <!-- 8-sided die -->
+            <div class="pointer dicey col-6 border-0 rounded-0 bg-purple p-5" data-die="8">
+               <h4 class="mb-4 dice-variable-font text-center text-white">
+                  <strong>Manager</strong>
+               </h4>
+               <p class="text-center">
+                  <i class="text-white fad fa-fw fa-3x fa-dice-d8"></i>
+               </p>
+               <p class="text-center dice-variable-font text-larger text-white">
+                  <em>eight-sided</em>
+               </p>
+            </div>
+
+            <!-- 10-sided die -->
+            <div class="pointer dicey col-6 border-0 rounded-0 bg-blue p-5" data-die="10">
+               <h4 class="mb-4 dice-variable-font text-center text-white">
+                  <strong>Owner</strong>
+               </h4>
+               <p class="text-center">
+                  <i class="text-white fad fa-fw fa-3x fa-dice-d10"></i>
+               </p>
+               <p class="text-center dice-variable-font text-larger text-white">
+                  <em>ten-sided</em>
+               </p>
+            </div>
+
+         </div>
+
+         <!-- The results circle -->
+         <div class="col-12 hoisted">
+            <h3 id="die-roll-result" class="text-center bg-transparent">
+               <span class="bg-white rounded-circle courier">0</span>
+            </h3>
+         </div>
+      </div>
+      <!-- col-sm-12 -->
+      </div>
+      <!-- .row -->
 
       <!-- Load footer dynamically -->
       <section id="footer"></section>
-
    </main>
 
    <!-- jquery JS minified -->
@@ -73,6 +142,7 @@
 
    <!-- Your Javascript -->
    <script src="js/main.js"></script>
+   <script src="js/die-roller.js"></script>
 
    <script>
       $(function () {
