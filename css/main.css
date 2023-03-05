@@ -28,7 +28,7 @@ html {
 
 body {
   box-sizing: border-box;
-  font-family: 'Albert Sans', Helvetica, Arial, sans-serif;
+  font-family: "Albert Sans", Helvetica, Arial, sans-serif;
   background: var(--page-bg);
   color: var(--graphite);
   font-size: 1.05rem;
@@ -36,37 +36,39 @@ body {
 }
 
 header {
-   background-color: var(--trench-blue);
+  background-color: var(--trench-blue);
 }
 
-p, li, td, tr {
+p,
+li,
+td,
+tr {
   color: var(--body-font);
   font-size: 1.1rem !important;
-  font-family: 'Albert Sans', Helvetica, Arial, sans-serif;
+  font-family: "Albert Sans", Helvetica, Arial, sans-serif;
 }
 
 #homepage-nav li {
-   font-size: 1.5rem !important;
-
+  font-size: 1.5rem !important;
 }
 
 .pointer {
-   cursor: pointer; 
+  cursor: pointer;
 }
 
 .text-large {
-   font-size: 1.25rem;
+  font-size: 1.25rem;
 }
 
 .text-larger {
-   font-size: 1.5rem;
+  font-size: 1.5rem;
 }
 
 .alert-info {
-   background: var(--green-grey);
-   border-radius: .5em;
-   border: none;
-   box-shadow: none;
+  background: var(--green-grey);
+  border-radius: 0.5em;
+  border: none;
+  box-shadow: none;
 }
 
 /* colors ------------------------------- */
@@ -78,6 +80,10 @@ p, li, td, tr {
   background: var(--employee-green);
 }
 
+.bg-alice-blue {
+  background: var(--alice-blue);
+}
+
 .bg-purple {
   background: var(--manager-purple);
 }
@@ -87,29 +93,46 @@ p, li, td, tr {
 }
 
 .chocolate {
-   color: var(--chocolate);
+  color: var(--chocolate);
 }
 
 .bright-blue {
-   color: var(--bright-blue);
+  color: var(--bright-blue);
 }
 
 .trench-blue {
-   color: var(--trench-blue);
+  color: var(--trench-blue);
 }
 
 .bg-trench-blue {
-   background: var(--trench-blue);
+  background: var(--trench-blue);
 }
 
 .bg-green-grey {
-   background: var(--green-grey);
+  background: var(--green-grey);
 }
 
 .bg-light-blue {
-   background: var(--light-blue); 
+  background: var(--light-blue) !important;
 }
 
+.unemployed-red {
+  color: var(--unemployed-red) !important;
+}
+
+.employee-green {
+  color: var(--employee-green) !important;
+}
+
+.manager-purple {
+  color: var(--manager-purple) !important;
+}
+
+.owner-blue {
+  color: var(--owner-blue) !important;
+}
+
+/* select */
 .custom-select {
   font-weight: 400;
   /* color: #495057 !important; */
@@ -120,4 +143,8 @@ p, li, td, tr {
   -webkit-appearance: none !important;
   -moz-appearance: none !important;
   appearance: none !important;
+}
+
+.no-bullet-list {
+   list-style-type: none;
 }
