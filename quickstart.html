@@ -50,6 +50,11 @@
       .badge-manager {
          background: var(--manager-purple);
       }
+
+      .name {
+         font-size: 1.2rem;
+         font-weight: bold;
+      }
    </style>
 
    <title>Social Justice Game</title>
@@ -68,7 +73,7 @@
       <!-- content here -->
       <div class="row">
          <div class="col-sm-12">
-            <div class="card border-0 bg-white mt-3 p-3">
+            <div class="card border-0 bg-white mt-3 p-3" id="select-players-card">
                <div class="py-2 card-header bg-transparent border-bottom-0 chocolate d-flex justify-content-between">
                   <h3>Enter Players</h3>
                   <p class="d-none chocolate checkmark"><i class="fa-regular fa-fw fa-2x fa-users"></i></p>
@@ -76,18 +81,18 @@
                <div class="card-body" id="select-students-card">
                   <!-- Enter player's names -->
                   <div class="alert alert-info mb-3">
-                     <p><em>Player roles are chosen randomly. Choose <strong>one player</strong> to enter all 4-6
-                           players' names
-                           below.</em></p>
+                     <p>
+                        <em>Player roles are chosen randomly. Choose <strong>one player</strong> to enter all 4-6
+                           players' names below.</em>
+                     </p>
                      <!-- Link to modal for why only 6 names -->
                      <p class="mt-n2 mb-0 mr-2 bright-blue"><a role="button" data-toggle="modal"
                            data-target="#six-players-modal">Six-player limit?</a></p>
                   </div>
 
                   <!-- Incorrect number of players alert -->
-                  <div class="alert alert-danger d-none" role="alert" id="too-few-players-alert">
-                     <i class="fa-regular fa-hexagon-exclamation mr-3 fa-fw fa-lg"></i>Enter at least 4 players
-                  </div>
+                  <div class="alert alert-danger d-none" role="alert" id="too-few-players-alert"><i
+                        class="fa-regular fa-hexagon-exclamation mr-3 fa-fw fa-lg"></i>Enter at least 4 players</div>
 
                   <div class="form-group border-0">
                      <div class="input-group">
@@ -157,8 +162,21 @@
 
             <!-- Assign Roles Card -->
             <div class="card border-0 bg-white mt-3 p-3 d-none" id="assign-roles-card">
+               <div
+                  class="py-2 card-header bg-transparent border-bottom chocolate d-flex justify-content-between align-items-center">
+                  <h3>Assigned Roles</h3>
+                  <p class="chocolate"><i class="fa-regular fa-fw fa-2x fa-users"></i></p>
+               </div>
+
                <ul class="list-group" id="roles-list"></ul>
+
+               <hr />
+               <p class="text-center">
+                  <button type="button" class="btn btn-primary btn-lg text-light mt-3 w-50" id="start-over-button"><i
+                        class="fa-light fa-rotate-right mr-2"></i>Start Over</button>
+               </p>
             </div>
+
             <!-- .card -->
          </div>
          <!-- .col-sm-12 -->
@@ -181,9 +199,8 @@
                </button>
             </div>
             <div class="modal-body p-4">The optimal number of players is 4. Playing with less than 4 or more than 6
-               players, play quality likely
-               diminishes. If you must add more than 6 players, you might alternate between adding additional Unemployed
-               and Employee players, as you see fit.</div>
+               players, play quality likely diminishes. If you must add more than 6 players, you might alternate between
+               adding additional Unemployed and Employee players, as you see fit.</div>
          </div>
       </div>
    </div>
