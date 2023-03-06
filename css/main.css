@@ -19,6 +19,15 @@
   --owner-blue: dodgerblue;
   --skyscraper-green: #d3d9d7;
   --house-green: green;
+  --orange-realty: #f1592b;
+  --dark-red-realty: #dc2c35;
+  --light-green-realty: #8bc34a;
+  --dark-green-realty: #3f9653;
+  --light-purple-realty: #b257c2;
+  --dark-purple-realty: #7e57c2;
+  --light-blue-realty: #00aad4;
+  --dark-blue-realty: #0072bb;
+  --eap-green: #0c5460;
 }
 
 html {
@@ -92,6 +101,10 @@ tr {
   background: var(--owner-blue);
 }
 
+.eap-green {
+  color: var(--eap-green);
+}
+
 .chocolate {
   color: var(--chocolate);
 }
@@ -132,6 +145,71 @@ tr {
   color: var(--owner-blue) !important;
 }
 
+/* Realty ----------------------------------------- */
+.orange-realty {
+  color: var(--orange-realty);
+}
+
+.bg-orange-realty {
+  background-color: var(--orange-realty);
+}
+
+.dark-red-realty {
+  color: var(--dark-red-realty);
+}
+
+.bg-dark-red-realty {
+  background-color: var(--dark-red-realty);
+}
+
+.light-green-realty {
+  color: var(--light-green-realty);
+}
+
+.bg-light-green-realty {
+  background-color: var(--light-green-realty);
+}
+
+.dark-green-realty {
+  color: var(--dark-green-realty);
+}
+
+.bg-dark-green-realty {
+  background-color: var(--dark-green-realty);
+}
+
+.light-purple-realty {
+  color: var(--light-purple-realty);
+}
+
+.bg-light-purple-realty {
+  background-color: var(--light-purple-realty);
+}
+
+.dark-purple-realty {
+  color: var(--dark-purple-realty);
+}
+
+.bg-dark-purple-realty {
+  background-color: var(--dark-purple-realty);
+}
+
+.light-blue-realty {
+  color: var(--light-blue-realty);
+}
+
+.bg-light-blue-realty {
+  background-color: var(--light-blue-realty);
+}
+
+.dark-blue-realty {
+  color: var(--dark-blue-realty);
+}
+
+.bg-dark-blue-realty {
+  background-color: var(--dark-blue-realty);
+}
+
 /* select */
 .custom-select {
   font-weight: 400;
@@ -146,5 +224,5 @@ tr {
 }
 
 .no-bullet-list {
-   list-style-type: none;
+  list-style-type: none;
 }

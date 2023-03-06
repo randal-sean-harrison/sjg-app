@@ -2,170 +2,251 @@
 <html lang="en" dir="ltr">
 
 <head>
-   <meta charset="utf-8" />
-   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-   <!-- Google Analytics -->
+	<!-- Google Analytics -->
 
-   <link rel="icon" href="img/favicons/favicon.ico" sizes="any" />
-   <!-- 32×32 -->
-   <link rel="icon" href="img/favicons/icon.svg" type="image/svg+xml" />
-   <link rel="apple-touch-icon" href="img/favicons/apple-touch-icon.png" />
-   <!-- 180×180 -->
-   <link rel="manifest" href="img/favicons/manifest.webmanifest" />
+	<link rel="icon" href="img/favicons/favicon.ico" sizes="any" />
+	<!-- 32×32 -->
+	<link rel="icon" href="img/favicons/icon.svg" type="image/svg+xml" />
+	<link rel="apple-touch-icon" href="img/favicons/apple-touch-icon.png" />
+	<!-- 180×180 -->
+	<link rel="manifest" href="img/favicons/manifest.webmanifest" />
 
-   <!-- jQuery UI css -->
-   <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css" />
+	<!-- jQuery UI css -->
+	<link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css" />
 
-   <!-- Bootstrap CSS -->
-   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
-      integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous" />
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+		integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous" />
 
-   <link rel="preconnect" href="https://fonts.googleapis.com" />
-   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-   <link
-      href="https://fonts.googleapis.com/css2?family=Albert+Sans:ital,wght@0,300;0,400;0,600;1,400&family=Leckerli+One&display=swap"
-      rel="stylesheet" />
+	<link rel="preconnect" href="https://fonts.googleapis.com" />
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+	<link
+		href="https://fonts.googleapis.com/css2?family=Albert+Sans:ital,wght@0,300;0,400;0,600;1,400&family=Leckerli+One&display=swap"
+		rel="stylesheet" />
 
-   <!-- Fontawesome icons -->
-   <script src="https://kit.fontawesome.com/0b466e618c.js" crossorigin="anonymous"></script>
+	<!-- Fontawesome icons -->
+	<script src="https://kit.fontawesome.com/0b466e618c.js" crossorigin="anonymous"></script>
 
-   <!-- Main local styles -->
-   <link rel="stylesheet" href="css/main.css" />
+	<!-- Main local styles -->
+	<link rel="stylesheet" href="css/main.css" />
 
-   <title>Social Justice Game</title>
+	<style>
+		.text-white {
+			color: white !important;
+		}
+
+		button:focus {
+			box-shadow: none !important;
+			outline: none !important;
+		}
+	</style>
+
+	<title>Social Justice Game</title>
 </head>
 
 <body>
-   <!-- Main content here -->
-  <header>
-      <img src="img/mobile-header.png" class="img-fluid" alt="Social Justice Game logo" />
-      <div class="bg-light p-1">
-         <h2 class="chocolate text-center mt-3 mb-2 display-4">Realty</h2>
-      </div>
-   </header>
-
-   <main id="wrapper" class="container-fluid m-0 p-3">
-      <!-- content here -->
-
-
-<div class="accordion" id="accordion64637789">
-	<div class="card">
-		<div class="card-header" id="header-0">
-			<h2 class="mb-0">
-				<button class="btn btn-link w-100 h-100 text-left" type="button" data-toggle="collapse" data-target="#panel77302258" aria-expanded="false" aria-controls="header-0">Accordion 1</button>
-			</h2>
+	<!-- Main content here -->
+	<header>
+		<img src="img/mobile-header.png" class="img-fluid" alt="Social Justice Game logo" />
+		<div class="bg-light p-1">
+			<h2 class="chocolate text-center mt-3 mb-2 display-4">Realty</h2>
 		</div>
-		<div id="panel77302258" class="collapse" aria-labelledby="headingOne" data-parent="#accordion64637789">
-			<div class="card-body">Lorem ipsum dolor sit amet.</div>
+	</header>
+
+	<main id="wrapper" class="container-fluid m-0 p-3">
+		<!-- content here -->
+
+		<div class="card border-0 bg-white mt-3 p-3" id="select-realty-card">
+			<div class="py-2 card-header bg-transparent border-bottom-0 chocolate d-flex justify-content-between">
+				<h3>Neighborhoods</h3>
+				<p class="d-none chocolate checkmark"><i class="fa-regular fa-fw fa-2x fa-users"></i></p>
+			</div>
+			<div class="card-body" id="select-students-card">
+				<div class="accordion border-0" id="accordion-realty">
+					<div class="card border-0 mb-3 rounded-sm">
+						<div class="card-header p-2 bg-orange-realty" id="header-0">
+							<h2 class="mb-0">
+								<button
+									class="btn btn-link w-100 h-100 text-white text-left text-decoration-none text-decoration-none pb-0"
+									type="button" data-toggle="collapse" data-target="#panel77302258" aria-expanded="false"
+									aria-controls="header-0">
+									<div class="d-flex justify-content-center align-items-center">
+										<p class="border-right text-light text-center my-1">Cabrini Green</p>
+										<p class="border-right text-light text-center my-1">Watts Way</p>
+										<p class="text-light text-center my-1">Ninth Ward</p>
+									</div>
+
+								</button>
+							</h2>
+						</div>
+						<div id="panel77302258" class="collapse" aria-labelledby="headingOne" data-parent="#accordion-realty">
+							<div class="card-body bg-light">
+
+								<ul class="list-group list-group-flush realties">
+									<li data-title="Cabrini Green"
+										class="list-group-item bg-transparent d-flex justify-content-between align-items-center bright-blue pointer">
+										Cabrini Green
+										<span class="badge badge-pill badge-success">$200</span>
+									</li>
+									<li
+										class="list-group-item bg-transparent d-flex justify-content-between align-items-center bright-blue pointer">
+										Watts Way
+										<span class="badge badge-pill badge-success">$225</span>
+									</li>
+									<li
+										class="list-group-item bg-transparent d-flex justify-content-between align-items-center bright-blue pointer">
+										Ninth Ward
+										<span class="badge badge-pill badge-success">$250</span>
+									</li>
+								</ul>
+
+							</div>
+						</div>
+					</div>
+					<div class="card border-0 mb-3 rounded-sm">
+						<div class="card-header bg-dark-red-realty" id="header-1">
+							<h2 class="mb-0">
+								<button class="btn btn-link w-100 h-100 text-white text-left text-decoration-none pb-0"
+									type="button" data-toggle="collapse" data-target="#panel55521359" aria-expanded="false"
+									aria-controls="header-1">
+									<div class="d-flex justify-content-center align-items-center">
+										<p class="border-right text-light text-center my-1">Parks Place</p>
+										<p class="border-right text-light text-center my-1">Douglass Downs</p>
+										<p class="text-light text-center my-1">Trayvon Terrace</p>
+									</div>
+
+								</button>
+							</h2>
+						</div>
+						<div id="panel55521359" class="collapse" aria-labelledby="headingOne" data-parent="#accordion-realty">
+							<div class="card-body bg-light">Lorem ipsum dolor sit amet.</div>
+						</div>
+					</div>
+					<div class="card border-0 mb-3 rounded-sm">
+						<div class="card-header bg-light-green-realty" id="header-2">
+							<h2 class="mb-0">
+								<button class="btn btn-link w-100 h-100 text-white text-left text-decoration-none" type="button"
+									data-toggle="collapse" data-target="#panel21900270" aria-expanded="false"
+									aria-controls="header-2">Haymarket Heights<i class="fa-light fa-pipe mx-2"></i>Ledbetter
+									Lane<i class="fa-light fa-pipe mx-2"></i>Chavez Commons</button>
+							</h2>
+						</div>
+						<div id="panel21900270" class="collapse" aria-labelledby="headingOne" data-parent="#accordion-realty">
+							<div class="card-body bg-light">Lorem ipsum dolor sit amet.</div>
+						</div>
+					</div>
+					<div class="card border-0 mb-3 rounded-sm">
+						<div class="card-header bg-dark-green-realty" id="header-3">
+							<h2 class="mb-0">
+								<button class="btn btn-link w-100 h-100 text-white text-left text-decoration-none" type="button"
+									data-toggle="collapse" data-target="#panel98611390" aria-expanded="false"
+									aria-controls="header-3">Hoffa Havens<i class="fa-light fa-pipe mx-2"></i>Capone Court<i
+										class="fa-light fa-pipe mx-2"></i>Bear Stearns Boulevard</button>
+							</h2>
+						</div>
+						<div id="panel98611390" class="collapse" aria-labelledby="headingOne" data-parent="#accordion-realty">
+							<div class="card-body bg-light">Lorem ipsum dolor sit amet.</div>
+						</div>
+					</div>
+					<div class="card border-0 mb-3 rounded-sm">
+						<div class="card-header bg-light-purple-realty" id="header-4">
+							<h2 class="mb-0">
+								<button class="btn btn-link w-100 h-100 text-white text-left text-decoration-none" type="button"
+									data-toggle="collapse" data-target="#panel89417541" aria-expanded="false"
+									aria-controls="header-4">Cabrini Green<i class="fa-light fa-pipe mx-2"></i>Watts Way<i
+										class="fa-light fa-pipe mx-2"></i>Ninth Ward</button>
+							</h2>
+						</div>
+						<div id="panel89417541" class="collapse" aria-labelledby="headingOne" data-parent="#accordion-realty">
+							<div class="card-body bg-light">Lorem ipsum dolor sit amet.</div>
+						</div>
+					</div>
+					<div class="card border-0 mb-3 rounded-sm">
+						<div class="card-header bg-dark-purple-realty" id="header-5">
+							<h2 class="mb-0">
+								<button class="btn btn-link w-100 h-100 text-white text-left text-decoration-none" type="button"
+									data-toggle="collapse" data-target="#panel70364807" aria-expanded="false"
+									aria-controls="header-5">Cabrini Green<i class="fa-light fa-pipe mx-2"></i>Watts Way<i
+										class="fa-light fa-pipe mx-2"></i>Ninth Ward</button>
+							</h2>
+						</div>
+						<div id="panel70364807" class="collapse" aria-labelledby="headingOne" data-parent="#accordion-realty">
+							<div class="card-body bg-light">Lorem ipsum dolor sit amet.</div>
+						</div>
+					</div>
+					<div class="card border-0 mb-3 rounded-sm">
+						<div class="card-header bg-light-blue-realty" id="header-6">
+							<h2 class="mb-0">
+								<button class="btn btn-link w-100 h-100 text-white text-left text-decoration-none" type="button"
+									data-toggle="collapse" data-target="#panel87297069" aria-expanded="false"
+									aria-controls="header-6">Cabrini Green<i class="fa-light fa-pipe mx-2"></i>Watts Way<i
+										class="fa-light fa-pipe mx-2"></i>Ninth Ward</button>
+							</h2>
+						</div>
+						<div id="panel87297069" class="collapse" aria-labelledby="headingOne" data-parent="#accordion-realty">
+							<div class="card-body bg-light">Lorem ipsum dolor sit amet.</div>
+						</div>
+					</div>
+					<div class="card border-0 mb-3 rounded-sm">
+						<div class="card-header bg-dark-blue-realty" id="header-7">
+							<h2 class="mb-0">
+								<button class="btn btn-link w-100 h-100 text-white text-left text-decoration-none" type="button"
+									data-toggle="collapse" data-target="#panel55368455" aria-expanded="false"
+									aria-controls="header-7">Cabrini Green<i class="fa-light fa-pipe mx-2"></i>Watts Way<i
+										class="fa-light fa-pipe mx-2"></i>Ninth Ward</button>
+							</h2>
+						</div>
+						<div id="panel55368455" class="collapse" aria-labelledby="headingOne" data-parent="#accordion-realty">
+							<div class="card-body bg-light">Lorem ipsum dolor sit amet.</div>
+						</div>
+					</div>
+					<div class="card border-0 mb-3 rounded-sm">
+						<div class="card-header bg-green-grey" id="header-8">
+							<h2 class="mb-0">
+								<button class="btn btn-link w-100 h-100 eap-green text-left text-decoration-none" type="button"
+									data-toggle="collapse" data-target="#panel-utilities" aria-expanded="false"
+									aria-controls="header-8">Enron Electric<i class="fa-light fa-pipe mx-2"></i>Flint
+									Water</button>
+							</h2>
+						</div>
+						<div id="panel-utilities" class="collapse" aria-labelledby="headingOne"
+							data-parent="#accordion-realty">
+							<div class="card-body bg-light">Lorem ipsum dolor sit amet.</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- card-body -->
 		</div>
-	</div>
-	<div class="card">
-		<div class="card-header" id="header-1">
-			<h2 class="mb-0">
-				<button class="btn btn-link w-100 h-100 text-left" type="button" data-toggle="collapse" data-target="#panel55521359" aria-expanded="false" aria-controls="header-1">Accordion 2</button>
-			</h2>
-		</div>
-		<div id="panel55521359" class="collapse" aria-labelledby="headingOne" data-parent="#accordion64637789">
-			<div class="card-body">Lorem ipsum dolor sit amet.</div>
-		</div>
-	</div>
-	<div class="card">
-		<div class="card-header" id="header-2">
-			<h2 class="mb-0">
-				<button class="btn btn-link w-100 h-100 text-left" type="button" data-toggle="collapse" data-target="#panel21900270" aria-expanded="false" aria-controls="header-2">Accordion 3</button>
-			</h2>
-		</div>
-		<div id="panel21900270" class="collapse" aria-labelledby="headingOne" data-parent="#accordion64637789">
-			<div class="card-body">Lorem ipsum dolor sit amet.</div>
-		</div>
-	</div>
-	<div class="card">
-		<div class="card-header" id="header-3">
-			<h2 class="mb-0">
-				<button class="btn btn-link w-100 h-100 text-left" type="button" data-toggle="collapse" data-target="#panel98611390" aria-expanded="false" aria-controls="header-3">Accordion 4</button>
-			</h2>
-		</div>
-		<div id="panel98611390" class="collapse" aria-labelledby="headingOne" data-parent="#accordion64637789">
-			<div class="card-body">Lorem ipsum dolor sit amet.</div>
-		</div>
-	</div>
-	<div class="card">
-		<div class="card-header" id="header-4">
-			<h2 class="mb-0">
-				<button class="btn btn-link w-100 h-100 text-left" type="button" data-toggle="collapse" data-target="#panel89417541" aria-expanded="false" aria-controls="header-4">Accordion 5</button>
-			</h2>
-		</div>
-		<div id="panel89417541" class="collapse" aria-labelledby="headingOne" data-parent="#accordion64637789">
-			<div class="card-body">Lorem ipsum dolor sit amet.</div>
-		</div>
-	</div>
-	<div class="card">
-		<div class="card-header" id="header-5">
-			<h2 class="mb-0">
-				<button class="btn btn-link w-100 h-100 text-left" type="button" data-toggle="collapse" data-target="#panel70364807" aria-expanded="false" aria-controls="header-5">Accordion 6</button>
-			</h2>
-		</div>
-		<div id="panel70364807" class="collapse" aria-labelledby="headingOne" data-parent="#accordion64637789">
-			<div class="card-body">Lorem ipsum dolor sit amet.</div>
-		</div>
-	</div>
-	<div class="card">
-		<div class="card-header" id="header-6">
-			<h2 class="mb-0">
-				<button class="btn btn-link w-100 h-100 text-left" type="button" data-toggle="collapse" data-target="#panel87297069" aria-expanded="false" aria-controls="header-6">Accordion 7</button>
-			</h2>
-		</div>
-		<div id="panel87297069" class="collapse" aria-labelledby="headingOne" data-parent="#accordion64637789">
-			<div class="card-body">Lorem ipsum dolor sit amet.</div>
-		</div>
-	</div>
-	<div class="card">
-		<div class="card-header" id="header-7">
-			<h2 class="mb-0">
-				<button class="btn btn-link w-100 h-100 text-left" type="button" data-toggle="collapse" data-target="#panel55368455" aria-expanded="false" aria-controls="header-7">Accordion 8</button>
-			</h2>
-		</div>
-		<div id="panel55368455" class="collapse" aria-labelledby="headingOne" data-parent="#accordion64637789">
-			<div class="card-body">Lorem ipsum dolor sit amet.</div>
-		</div>
-	</div>
-</div>
+		<!-- card -->
 
+		<!-- Load footer dynamically -->
+		<section id="footer"></section>
+	</main>
 
+	<!-- jquery JS minified -->
+	<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
 
+	<!-- jquery ui -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.13.2/jquery-ui.min.js"
+		integrity="sha512-57oZ/vW8ANMjR/KQ6Be9v/+/h6bq9/l3f0Oc7vn6qMqyhvPd1cvKBRWWpzu0QoneImqr2SkmO4MSqU+RpHom3Q=="
+		crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
+	<!-- popper minified -->
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+		integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+		crossorigin="anonymous"></script>
 
+	<!-- bootstrap JS minified -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.2/js/bootstrap.min.js"
+		integrity="sha512-7rusk8kGPFynZWu26OKbTeI+QPoYchtxsmPeBqkHIEXJxeun4yJ4ISYe7C6sz9wdxeE1Gk3VxsIWgCZTc+vX3g=="
+		crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
-
-
-
-      <!-- Load footer dynamically -->
-      <section id="footer"></section>
-
-   </main>
-
-   <!-- jquery JS minified -->
-   <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-
-   <!-- jquery ui -->
-   <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.13.2/jquery-ui.min.js"
-      integrity="sha512-57oZ/vW8ANMjR/KQ6Be9v/+/h6bq9/l3f0Oc7vn6qMqyhvPd1cvKBRWWpzu0QoneImqr2SkmO4MSqU+RpHom3Q=="
-      crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-
-   <!-- popper minified -->
-   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-      crossorigin="anonymous"></script>
-
-   <!-- bootstrap JS minified -->
-   <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.2/js/bootstrap.min.js"
-      integrity="sha512-7rusk8kGPFynZWu26OKbTeI+QPoYchtxsmPeBqkHIEXJxeun4yJ4ISYe7C6sz9wdxeE1Gk3VxsIWgCZTc+vX3g=="
-      crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-
-   <!-- Your Javascript -->
-   <script src="js/main.js"></script>
-
+	<!-- Your Javascript -->
+	<script src="js/main.js"></script>
 </body>
 
 </html>
