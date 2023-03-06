@@ -42,6 +42,10 @@
 			box-shadow: none !important;
 			outline: none !important;
 		}
+
+		button div p {
+			line-height: 1.1;
+		}
 	</style>
 
 	<title>Social Justice Game</title>
@@ -64,30 +68,36 @@
 				<h3>Neighborhoods</h3>
 				<p class="d-none chocolate checkmark"><i class="fa-regular fa-fw fa-2x fa-users"></i></p>
 			</div>
+
+			<p class="mb-2 mt-4 mr-5 bright-blue text-right pointer"><i class="fa-duotone fa-wallet fa-fw mr-2"></i>View my
+				portfolio</p>
+			<div class="alert alert-info mb-2 mx-4">
+				<p class="mb-0">
+					<em>Tap below to view and select properties.</em>
+				</p>
+			</div>
+
 			<div class="card-body" id="select-students-card">
 				<div class="accordion border-0" id="accordion-realty">
 					<div class="card border-0 mb-3 rounded-sm">
 						<div class="card-header p-2 bg-orange-realty" id="header-0">
 							<h2 class="mb-0">
-								<button
-									class="btn btn-link w-100 h-100 text-white text-left text-decoration-none text-decoration-none pb-0"
+								<button class="btn btn-link w-100 h-100 text-white text-left text-decoration-none pb-1"
 									type="button" data-toggle="collapse" data-target="#panel77302258" aria-expanded="false"
 									aria-controls="header-0">
-									<div class="d-flex justify-content-center align-items-center">
-										<p class="border-right text-light text-center my-1">Cabrini Green</p>
-										<p class="border-right text-light text-center my-1">Watts Way</p>
-										<p class="text-light text-center my-1">Ninth Ward</p>
+									<div class="d-flex justify-content-between align-items-center">
+										<p class="text-light text-center my-1 mx-2">Cabrini Green</p>
+										<p class="text-light text-center my-1 mx-2">Watts Way</p>
+										<p class="text-light text-center my-1 mx-2">Ninth Ward</p>
 									</div>
-
 								</button>
 							</h2>
 						</div>
 						<div id="panel77302258" class="collapse" aria-labelledby="headingOne" data-parent="#accordion-realty">
 							<div class="card-body bg-light">
-
 								<ul class="list-group list-group-flush realties">
 									<li data-title="Cabrini Green"
-										class="list-group-item bg-transparent d-flex justify-content-between align-items-center bright-blue pointer">
+										class="list-group-item bg-transparent d-flex justify-content-center align-items-center bright-blue pointer">
 										Cabrini Green
 										<span class="badge badge-pill badge-success">$200</span>
 									</li>
@@ -102,22 +112,20 @@
 										<span class="badge badge-pill badge-success">$250</span>
 									</li>
 								</ul>
-
 							</div>
 						</div>
 					</div>
 					<div class="card border-0 mb-3 rounded-sm">
 						<div class="card-header bg-dark-red-realty" id="header-1">
 							<h2 class="mb-0">
-								<button class="btn btn-link w-100 h-100 text-white text-left text-decoration-none pb-0"
+								<button class="btn btn-link w-100 h-100 text-white text-left text-decoration-none pb-1"
 									type="button" data-toggle="collapse" data-target="#panel55521359" aria-expanded="false"
 									aria-controls="header-1">
 									<div class="d-flex justify-content-center align-items-center">
-										<p class="border-right text-light text-center my-1">Parks Place</p>
-										<p class="border-right text-light text-center my-1">Douglass Downs</p>
-										<p class="text-light text-center my-1">Trayvon Terrace</p>
+										<p class="text-light text-center my-1 mx-2">Parks Place</p>
+										<p class="text-light text-center my-1 mx-2">Douglass Downs</p>
+										<p class="text-light text-center my-1 mx-2">Trayvon Terrace</p>
 									</div>
-
 								</button>
 							</h2>
 						</div>
@@ -130,8 +138,13 @@
 							<h2 class="mb-0">
 								<button class="btn btn-link w-100 h-100 text-white text-left text-decoration-none" type="button"
 									data-toggle="collapse" data-target="#panel21900270" aria-expanded="false"
-									aria-controls="header-2">Haymarket Heights<i class="fa-light fa-pipe mx-2"></i>Ledbetter
-									Lane<i class="fa-light fa-pipe mx-2"></i>Chavez Commons</button>
+									aria-controls="header-2">
+									<div class="d-flex justify-content-center align-items-center">
+										<p class="text-light text-center my-1 mx-2">Haymarket Heights</p>
+										<p class="text-light text-center my-1 mx-2">Ledbetter Lane</p>
+										<p class="text-light text-center my-1 mx-2">Chavez Commons</p>
+									</div>
+								</button>
 							</h2>
 						</div>
 						<div id="panel21900270" class="collapse" aria-labelledby="headingOne" data-parent="#accordion-realty">
@@ -143,8 +156,13 @@
 							<h2 class="mb-0">
 								<button class="btn btn-link w-100 h-100 text-white text-left text-decoration-none" type="button"
 									data-toggle="collapse" data-target="#panel98611390" aria-expanded="false"
-									aria-controls="header-3">Hoffa Havens<i class="fa-light fa-pipe mx-2"></i>Capone Court<i
-										class="fa-light fa-pipe mx-2"></i>Bear Stearns Boulevard</button>
+									aria-controls="header-3">
+									<div class="d-flex justify-content-center align-items-center">
+										<p class="text-light text-center my-1 mx-2">Hoffa Havens</p>
+										<p class="text-light text-center my-1 mx-2">Capone Court</p>
+										<p class="text-light text-center my-1 mx-2">Bear Stearns Boulevard</p>
+									</div>
+								</button>
 							</h2>
 						</div>
 						<div id="panel98611390" class="collapse" aria-labelledby="headingOne" data-parent="#accordion-realty">
@@ -156,8 +174,13 @@
 							<h2 class="mb-0">
 								<button class="btn btn-link w-100 h-100 text-white text-left text-decoration-none" type="button"
 									data-toggle="collapse" data-target="#panel89417541" aria-expanded="false"
-									aria-controls="header-4">Cabrini Green<i class="fa-light fa-pipe mx-2"></i>Watts Way<i
-										class="fa-light fa-pipe mx-2"></i>Ninth Ward</button>
+									aria-controls="header-4">
+									<div class="d-flex justify-content-center align-items-center">
+										<p class="text-light text-center my-1 mx-2">Hoffa Havens</p>
+										<p class="text-light text-center my-1 mx-2">Capone Court</p>
+										<p class="text-light text-center my-1 mx-2">Bear Stearns Boulevard</p>
+									</div>
+								</button>
 							</h2>
 						</div>
 						<div id="panel89417541" class="collapse" aria-labelledby="headingOne" data-parent="#accordion-realty">
@@ -209,7 +232,7 @@
 								<button class="btn btn-link w-100 h-100 eap-green text-left text-decoration-none" type="button"
 									data-toggle="collapse" data-target="#panel-utilities" aria-expanded="false"
 									aria-controls="header-8">Enron Electric<i class="fa-light fa-pipe mx-2"></i>Flint
-									Water</button>
+									Water Froogle.com</button>
 							</h2>
 						</div>
 						<div id="panel-utilities" class="collapse" aria-labelledby="headingOne"
