@@ -7,7 +7,7 @@ $(document).ready(function () {
    if (choice === ".card-container") {
       $(choice).fadeIn();
    } else {
-      $(".card-container").hide().fadeOut();
+      $(".card-container").fadeOut();
       $(choice).fadeIn();
    }
 
