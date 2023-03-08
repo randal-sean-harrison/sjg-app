@@ -226,3 +226,14 @@ tr {
 .no-bullet-list {
   list-style-type: none;
 }
+
+/* realty ------------------------------------------- */
+.new-base-price:before {
+  content: "$";
+  font-size: 3.5rem;
+}
+
+.final-rent:before {
+  content: "$";
+  font-size: 3.5rem;
+}
