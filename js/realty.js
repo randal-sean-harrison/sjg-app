@@ -25,6 +25,8 @@ $(document).ready(function () {
     $(".new-base-price").text(base);
     //  Write base rent to card
     $(".final-rent").text(rents);
+    console.log(rents);
+    $(".final-rent").attr("data-base-rent-number", rents);
 
     // Write price per house to modal
     $(".modal").find(".price-per").text(pricePerHouse);
@@ -42,18 +44,25 @@ $(document).ready(function () {
     // Write finalPrice to card
     $(".new-base-price").text(finalPrice);
 
+    // Get rent base number
+    var baseRent = $(".final-rent").data("base-rent-number");
+
     // Write rents
     switch (numberOfHouses) {
+      case 0:
+        finalRent = baseRent;
+        $(".final-rent").text(finalRent);
+        break;
       case 1:
-        finalRent *= 5;
-        $(".final-rent").text(finalRent); 
+        finalRent = baseRent * 5;
+        $(".final-rent").text(finalRent);
         break;
       case 2:
-        finalRent *= 15;
+        finalRent = baseRent * 15;
         $(".final-rent").text(finalRent);
         break;
       case 3:
-        finalRent *= 45;
+        finalRent = baseRent * 45;
         $(".final-rent").text(finalRent);
         break;
       default:
