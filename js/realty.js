@@ -1,4 +1,8 @@
 $(document).ready(function () {
+  var base = 0;
+  var rents = 0;
+  var finalRent = 0;
+
   // Pop modal on click property name
   $(".realties li").on("click", function () {
     var modalTitle = $(this).data("title");
@@ -13,40 +17,48 @@ $(document).ready(function () {
     // Set the color of the card header
     $("#modal-properties .modal-header").removeClass().addClass("modal-header").addClass(modalNeighborhood);
 
-    // Get base price and write to card
-    var base = $(this).data("base");
-    $(".new-base-price").text(base);
+    // Get base price and base rent
+    base = $(this).data("base");
+    rents = $(this).data("base-rent");
 
-   // Write price per house to modal
-   $(".modal").find(".price-per").text(pricePerHouse);
+    // Write base price to the card
+    $(".new-base-price").text(base);
+    //  Write base rent to card
+    $(".final-rent").text(rents);
+
+    // Write price per house to modal
+    $(".modal").find(".price-per").text(pricePerHouse);
 
     // Show the modal
     $("#modal-properties").modal("show");
-  
-   });
+  });
 
-$("#numberOfHouses").on("change", function(){
-   var numberOfHouses = Number($(this).val());
-   var PricesPerHouses = Number($(".price-per").text());
-   var newBasement = Number($("#modal-properties .new-base-price").text());
-   var finalPrice = (numberOfHouses * PricesPerHouses) + newBasement;
+  $("#numberOfHouses").on("change", function () {
+    var numberOfHouses = Number($(this).val());
+    var PricesPerHouses = Number($(".price-per").text());
+    //  var newBasement = Number($("#modal-properties .new-base-price").text());
+    var finalPrice = numberOfHouses * PricesPerHouses + base;
 
-   // Write finalPrice to card
-   $(".new-base-price").text(finalPrice);
+    // Write finalPrice to card
+    $(".new-base-price").text(finalPrice);
 
-
-});
-
-
-
-
-
-
-
-
-
-
+    // Write rents
+    switch (numberOfHouses) {
+      case 1:
+        finalRent *= 5;
+        $(".final-rent").text(finalRent); 
+        break;
+      case 2:
+        finalRent *= 15;
+        $(".final-rent").text(finalRent);
+        break;
+      case 3:
+        finalRent *= 45;
+        $(".final-rent").text(finalRent);
+        break;
+      default:
+        break;
+    }
+  });
 });
 // document.ready
-
-
