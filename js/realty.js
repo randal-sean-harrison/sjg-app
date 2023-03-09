@@ -25,7 +25,6 @@ $(document).ready(function () {
     $(".new-base-price").text(base);
     //  Write base rent to card
     $(".final-rent").text(rents);
-    console.log(rents);
     $(".final-rent").attr("data-base-rent-number", rents);
 
     // Write price per house to modal

@@ -24,8 +24,9 @@ $(document).ready(function () {
       });
       //  fade out the Enter Players card
       $(this).parent().parent().parent().fadeOut();
-      //  Show the roles card
+      //  Show the roles card and start play card
       $("#assign-roles-card").removeClass("d-none");
+      $("#start-play-card").removeClass("d-none");
 
       // Count the number of players and read them into an array
       let numPlayers = 0;
@@ -72,6 +73,7 @@ $(document).ready(function () {
       }
     } else {
       $("#too-few-players-alert").removeClass("d-none");
+      
     }
   });
 
