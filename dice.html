@@ -44,7 +44,7 @@
       <main id="wrapper" class="container-fluid m-0 p-0">
          <!-- content here -->
 
-         <div id="die-roller">
+         <div class="container-fluid" id="die-roller">
             <div class="row">
                <!-- 4-sided die -->
                <div class="pointer dicey col-6 border-0 rounded-0 bg-red p-4" data-die="4">
@@ -100,17 +100,17 @@
                   </p>
                </div>
 
+               <!-- The results circle -->
+               <div class="col-12 hoisted">
+                  <h3 id="die-roll-result" class="text-center bg-transparent">
+                     <span class="bg-white rounded-lg courier">0</span>
+                  </h3>
+               </div>
+
             </div>
 
-            <!-- The results circle -->
-            <div class="col-12 hoisted">
-               <h3 id="die-roll-result" class="text-center bg-transparent">
-                  <span class="bg-white rounded-lg courier">0</span>
-               </h3>
-            </div>
-            <!-- col-sm-12 -->
          </div>
-         <!-- row -->
+         <!-- die roller row -->
 
 
          <!-- Load footer dynamically -->
