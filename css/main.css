@@ -49,8 +49,8 @@ header {
   background-color: var(--trench-blue);
 }
 
-.img-fluid {
-  max-height: 180px;
+header .img-fluid {
+  max-height: 150px;
 }
 
 p,
