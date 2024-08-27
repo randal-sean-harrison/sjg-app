@@ -1,580 +1,632 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
 
-<head>
-   <meta charset="utf-8" />
-   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+   <head>
+      <meta charset="utf-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-   <!-- Google Analytics -->
+      <!-- Google Analytics -->
 
-   <link rel="icon" href="img/favicons/favicon.ico" sizes="any" />
-   <!-- 32×32 -->
-   <link rel="icon" href="img/favicons/icon.svg" type="image/svg+xml" />
-   <link rel="apple-touch-icon" href="img/favicons/apple-touch-icon.png" />
-   <!-- 180×180 -->
-   <link rel="manifest" href="img/favicons/manifest.webmanifest" />
+      <link rel="icon" href="img/favicons/favicon.ico" sizes="any" />
+      <!-- 32×32 -->
+      <link rel="icon" href="img/favicons/icon.svg" type="image/svg+xml" />
+      <link rel="apple-touch-icon" href="img/favicons/apple-touch-icon.png" />
+      <!-- 180×180 -->
+      <link rel="manifest" href="img/favicons/manifest.webmanifest" />
 
-   <!-- jQuery UI css -->
-   <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css" />
+      <!-- jQuery UI css -->
+      <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css" />
 
-   <!-- Bootstrap CSS -->
-   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
-      integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous" />
+      <!-- Bootstrap CSS -->
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+         integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous" />
 
-   <link rel="preconnect" href="https://fonts.googleapis.com" />
-   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-   <link
-      href="https://fonts.googleapis.com/css2?family=Albert+Sans:ital,wght@0,300;0,400;0,600;1,400&family=Leckerli+One&display=swap"
-      rel="stylesheet" />
+      <link rel="preconnect" href="https://fonts.googleapis.com" />
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+      <link
+         href="https://fonts.googleapis.com/css2?family=Albert+Sans:ital,wght@0,300;0,400;0,600;1,400&family=Leckerli+One&display=swap"
+         rel="stylesheet" />
 
-   <!-- Fontawesome icons -->
-   <script src="https://kit.fontawesome.com/0b466e618c.js" crossorigin="anonymous"></script>
+      <!-- Fontawesome icons -->
+      <script src="https://kit.fontawesome.com/0b466e618c.js" crossorigin="anonymous"></script>
 
-   <!-- Main local styles -->
-   <link rel="stylesheet" href="css/main.css" />
+      <!-- Main local styles -->
+      <link rel="stylesheet" href="css/main.css" />
 
-   <title>Social Justice Game</title>
+      <title>Social Justice Game</title>
 
-   <style>
-      .card-header {
-         font-size: 1.5rem;
-         color: var(--chocolate);
-      }
+      <style>
+         .card-header {
+            font-size: 1.5rem;
+            color: var(--chocolate);
+         }
 
-      #view-rules-select {
-         height: 4rem !important
-      }
-   </style>
+         #view-rules-select {
+            height: 4rem !important
+         }
+      </style>
 
-</head>
+   </head>
 
-<body>
-   <!-- Main content here -->
-   <header>
-      <img src="img/mobile-header.png" class="img-fluid" alt="Social Justice Game logo" />
-      <div class="bg-light p-1">
-         <h2 class="chocolate text-center mt-3 mb-2 display-4">Rules</h2>
-      </div>
-   </header>
+   <body>
+      <!-- Main content here -->
+      <header></header>
 
-   <main id="wrapper" class="container-fluid p-2">
-      <!-- content here -->
-      <div class="row">
-         <div class="col-sm-12">
+      <main id="wrapper" class="container-fluid p-2">
+         <!-- content here -->
+         <div class="row">
+            <div class="col-sm-12">
 
 
-            <div class="form-group mt-3 mb-4 p-3">
-               <select class="form-control text-large custom-select bg-primary text-white p-3" name="view-rules-select"
-                  id="view-rules-select">
-                  <option value="card-container" selected>All rules</option>
-                  <option value="rules-objective">Objective</option>
-                  <option value="rules-winning-losing">Winning and losing</option>
-                  <option value="rules-bankruptcy">Bankruptcy</option>
-                  <option value="rules-turns">Turns</option>
-                  <option value="rules-improving-properties">Improving properties</option>
-                  <option value="rules-politics">Changing the rules (politics)</option>
-                  <option value="rules-change-cards">Change cards</option>
-                  <option value="rules-tokens">Tokens</option>
-                  <option value="rules-squares">Squares</option>
-               </select>
-            </div>
+               <div class="form-group mt-3 mb-4 p-3">
+                  <select class="form-control text-large custom-select bg-primary text-white p-3"
+                     name="view-rules-select" id="view-rules-select">
+                     <option value="card-container" selected>All rules</option>
+                     <option value="rules-objective">Objective</option>
+                     <option value="rules-winning-losing">Winning and losing</option>
+                     <option value="rules-bankruptcy">Bankruptcy</option>
+                     <option value="rules-turns">Turns</option>
+                     <option value="rules-improving-properties">Improving properties</option>
+                     <option value="rules-politics">Changing the rules (politics)</option>
+                     <option value="rules-change-cards">Change cards</option>
+                     <option value="rules-tokens">Tokens</option>
+                     <option value="rules-squares">Squares</option>
+                  </select>
+               </div>
 
 
-            <!-- Objective card -->
-            <div class="col-12 card-container mb-4 rules-objective">
-               <div class="card border-0 rounded">
-                  <div class="pt-4 pb-2 card-header bg-transparent border-bottom-0">Objective</div>
-                  <div class="card-body">
-                     <p>
-                        Unlike <em>Monopoly</em>, which assumes a level socioeconomic playing field, The Social Justice
-                        Game (SJG) more closely reflects actual inequities under the current American economy. By
-                        effecting real-world economic disparities at the start of the game, SJG aims to stimulate a
-                        frustration so comically absurd that gameplay evolves into a discussion among the players around
-                        the
-                        systemic inequities of contemporary capitalism.
-                     </p>
-                     <p class="alert alert-info p-3">
-                        <i class="fa-regular fa-face-smile-beam mr-2"></i><strong>We kid because we love!</strong><br>
-                        <em>The Social Justice Game: A Game About Cents &amp; Sensibility</em> <sup><i
-                              class="far fa-registered" aria-hidden="true"></i></sup> represents an <a role="button"
-                           data-toggle="modal" data-target="#modal-affiliation" class="bright-blue"
-                           class="chocolate">educational
-                           parody</a> of the
-                        game <em>Monopoly</em>, and more
-                        generally, of capitalism.
-                     </p>
+               <!-- Objective card -->
+               <div class="col-12 card-container mb-4 rules-objective">
+                  <div class="card border-0 rounded">
+                     <div class="pt-4 pb-2 card-header bg-transparent border-bottom-0">Objective</div>
+                     <div class="card-body">
+                        <p>
+                           Unlike <em>Monopoly</em>, which assumes a level socioeconomic playing field, The Social
+                           Justice
+                           Game (SJG) more closely reflects actual inequities under the current American economy. By
+                           effecting real-world economic disparities at the start of the game, SJG aims to stimulate a
+                           frustration so comically absurd that gameplay evolves into a discussion among the players
+                           around
+                           the
+                           systemic inequities of contemporary capitalism.
+                        </p>
+                        <p class="alert alert-info p-3">
+                           <i class="fa-regular fa-face-smile-beam mr-2"></i><strong>We kid because we
+                              love!</strong><br>
+                           <em>The Social Justice Game: A Game About Cents &amp; Sensibility</em> <sup><i
+                                 class="far fa-registered" aria-hidden="true"></i></sup> represents an <a role="button"
+                              data-toggle="modal" data-target="#modal-affiliation" class="bright-blue"
+                              class="chocolate">educational
+                              parody</a> of the
+                           game <em>Monopoly</em>, and more
+                           generally, of capitalism.
+                        </p>
+                     </div>
                   </div>
                </div>
-            </div>
 
-            <div class="col-12 card-container mb-4 rules-winning-losing">
-               <div class="card border-0 rounded">
-                  <div class="pt-4 pb-2 card-header bg-transparent border-bottom-0">Winning &amp; Losing</div>
-                  <div class="card-body">
-                     <p>Because the true goal is to play SJG reflexively and thoughtfully in order to learn as much as
-                        one can about socioeconomics, "winning" the game may take different shapes. Certainly, players
-                        may "lose" the game by going bankrupt ("unable to pay outstanding loans when they are due").</p>
+               <div class="col-12 card-container mb-4 rules-winning-losing">
+                  <div class="card border-0 rounded">
+                     <div class="pt-4 pb-2 card-header bg-transparent border-bottom-0">Winning &amp; Losing</div>
+                     <div class="card-body">
+                        <p>Because the true goal is to play SJG reflexively and thoughtfully in order to learn as much
+                           as
+                           one can about socioeconomics, "winning" the game may take different shapes. Certainly,
+                           players
+                           may "lose" the game by going bankrupt ("unable to pay outstanding loans when they are due").
+                        </p>
 
-                     <p>
-                        The primary goal for each player is to avoid bankruptcy—to survive and thrive, earning enough
-                        money to comfortably navigate the costs, penalties, and unexpected twists of fate which arise.
-                        <em>The surest way to do that is to purchase properties which produce rent from other
-                           players.</em> While Unemployed and Employees will find it difficult to purchase properties
-                        initially, they
-                        are able to take loans. They may also rise socioeconomically through joining the military or
-                        attending college.
-                     </p>
+                        <p>
+                           The primary goal for each player is to avoid bankruptcy—to survive and thrive, earning enough
+                           money to comfortably navigate the costs, penalties, and unexpected twists of fate which
+                           arise.
+                           <em>The surest way to do that is to purchase properties which produce rent from other
+                              players.</em> While Unemployed and Employees will find it difficult to purchase properties
+                           initially, they
+                           are able to take loans. They may also rise socioeconomically through joining the military or
+                           attending college.
+                        </p>
 
-                     <p class="alert alert-info"><i class="fa-solid fa-lightbulb-on mr-2"></i><strong>Changing the
-                           Rules</strong><br>Remember, this game is what you make it. Players may change the rules
-                        of
-                        the game any time by skipping a turn and proposing a rule.</p>
+                        <p class="alert alert-info"><i class="fa-solid fa-lightbulb-on mr-2"></i><strong>Changing the
+                              Rules</strong><br>Remember, this game is what you make it. Players may change the rules
+                           of
+                           the game any time by skipping a turn and proposing a rule.</p>
+                     </div>
                   </div>
                </div>
-            </div>
 
-            <div class="col-12 card-container mb-4 rules-bankruptcy">
-               <div class="card border-0 rounded">
-                  <div class="pt-4 pb-2 card-header bg-transparent border-bottom-0">Bankruptcy</div>
-                  <div class="card-body">
-                     <p>A player enters bankruptcy as soon as her total cash dips below $0 dollars and she is unable to
-                        take out a loan. Players may avoid bankruptcy in several ways:</p>
+               <div class="col-12 card-container mb-4 rules-bankruptcy">
+                  <div class="card border-0 rounded">
+                     <div class="pt-4 pb-2 card-header bg-transparent border-bottom-0">Bankruptcy</div>
+                     <div class="card-body">
+                        <p>A player enters bankruptcy as soon as her total cash dips below $0 dollars and she is unable
+                           to
+                           take out a loan. Players may avoid bankruptcy in several ways:</p>
 
-                     <ul>
-                        <li><strong>All players</strong> may sell property back to the bank or to another player for
-                           what the bank/player is willing to pay for it.</li>
-                        <li><strong>No player</strong> may hold more than 1 loan at a time from the bank. Players may
-                           hold only 1 loan at a time from each of the other players.</li>
-                        <li><strong>Employees, Managers and Owners</strong> may request loans from another player or
-                           from the Bank. The lending player (the player playing the Bank) may specify the loan period
-                           and interest.</li>
-                        <li><strong>Unemployed players</strong> may request loans from other players but not the bank,
-                           as the unemployed typically do not qualify for bank loans. The lending player may specify the
-                           loan period and interest.</li>
-                     </ul>
+                        <ul>
+                           <li><strong>All players</strong> may sell property back to the bank or to another player for
+                              what the bank/player is willing to pay for it.</li>
+                           <li><strong>No player</strong> may hold more than 1 loan at a time from the bank. Players may
+                              hold only 1 loan at a time from each of the other players.</li>
+                           <li><strong>Employees, Managers and Owners</strong> may request loans from another player or
+                              from the Bank. The lending player (the player playing the Bank) may specify the loan
+                              period
+                              and interest.</li>
+                           <li><strong>Unemployed players</strong> may request loans from other players but not the
+                              bank,
+                              as the unemployed typically do not qualify for bank loans. The lending player may specify
+                              the
+                              loan period and interest.</li>
+                        </ul>
+                     </div>
                   </div>
                </div>
-            </div>
 
-            <div class="col-12 card-container mb-4 rules-turns">
-               <div class="card border-0 rounded">
-                  <div class="pt-4 pb-2 card-header bg-transparent border-bottom-0">Turns</div>
-                  <div class="card-body">
-                     <p>
-                        The Owner player rolls first, at the start of the game. At the start of the player’s turn, she
-                        rolls the die indicated on her Role Card and moves her Movement Token to the indicated square.
-                        The player interacts with the square she has landed on. A player may purchase any property
-                        square she lands on if it’s for sale and improve it (and any other properties she owns) on the
-                        same
-                        turn. Play then rotates clockwise around the board to the next player.
-                     </p>
+               <div class="col-12 card-container mb-4 rules-turns">
+                  <div class="card border-0 rounded">
+                     <div class="pt-4 pb-2 card-header bg-transparent border-bottom-0">Turns</div>
+                     <div class="card-body">
+                        <p>
+                           The Owner player rolls first, at the start of the game. At the start of the player’s turn,
+                           she
+                           rolls the die indicated on her Role Card and moves her Movement Token to the indicated
+                           square.
+                           The player interacts with the square she has landed on. A player may purchase any property
+                           square she lands on if it’s for sale and improve it (and any other properties she owns) on
+                           the
+                           same
+                           turn. Play then rotates clockwise around the board to the next player.
+                        </p>
 
-                     <p class="alert alert-info"><i class="fad fa-gavel mr-2"></i><strong>No Property
-                           Auctions</strong><br />Unlike Monopoly, there is no public auction for a property when a
-                        player lands on it and chooses not to purchase it.</p>
+                        <p class="alert alert-info"><i class="fad fa-gavel mr-2"></i><strong>No Property
+                              Auctions</strong><br />Unlike Monopoly, there is no public auction for a property when a
+                           player lands on it and chooses not to purchase it.</p>
+                     </div>
                   </div>
                </div>
-            </div>
 
-            <div class="col-12 card-container mb-4 rules-improving-properties">
-               <div class="card border-0 roun class=" chocolate"ded">
-                  <div class="pt-4 pb-2 card-header bg-transparent border-bottom-0">Improving Properties</div>
-                  <div class="card-body">
-                     <p>Players improve their rents on owned properties by adding houses. When purchasing houses,
-                        players place the appropriate one-, two-, or three-house token on their property card to keep
-                        track of the number of houses owned.</p>
+               <div class="col-12 card-container mb-4 rules-improving-properties">
+                  <div class="card border-0 roun class=" chocolate"ded">
+                     <div class="pt-4 pb-2 card-header bg-transparent border-bottom-0">Improving Properties</div>
+                     <div class="card-body">
+                        <p>Players improve their rents on owned properties by adding houses. When purchasing houses,
+                           players place the appropriate one-, two-, or three-house token on their property card to keep
+                           track of the number of houses owned.</p>
 
-                     <ul>
-                        <li>
-                           <strong>Gentrification</strong> &mdash; Gentrification is the process by which players may
-                           forcibly purchase any property which is unimproved (has no houses) when landing on it. A
-                           player may forcibly purchase a property from the current landlord for the original price and
-                           must add at least 1 house to the property immediately. The original landlord may not refuse
-                           the sale.
-                        </li>
-                        <li><strong>Building Community</strong> &mdash; In contrast to gentrification, any player who
-                           donates a house to any property owned by another player never need pay rent when landing on
-                           that square. However, players may not donate a house to a property which already has 3
-                           houses.</li>
-                     </ul>
+                        <ul>
+                           <li>
+                              <strong>Gentrification</strong> &mdash; Gentrification is the process by which players may
+                              forcibly purchase any property which is unimproved (has no houses) when landing on it. A
+                              player may forcibly purchase a property from the current landlord for the original price
+                              and
+                              must add at least 1 house to the property immediately. The original landlord may not
+                              refuse
+                              the sale.
+                           </li>
+                           <li><strong>Building Community</strong> &mdash; In contrast to gentrification, any player who
+                              donates a house to any property owned by another player never need pay rent when landing
+                              on
+                              that square. However, players may not donate a house to a property which already has 3
+                              houses.</li>
+                        </ul>
 
-                     <p class="alert alert-info"><i class="fad fa-house mr-2"></i><strong>Adding
-                           Houses</strong><br />A player may add houses to any property she owns at the end of her turn.
-                     </p>
+                        <p class="alert alert-info"><i class="fad fa-house mr-2"></i><strong>Adding
+                              Houses</strong><br />A player may add houses to any property she owns at the end of her
+                           turn.
+                        </p>
+                     </div>
                   </div>
                </div>
-            </div>
 
-            <div class="col-12 card-container mb-4 rules-politics">
-               <div class="card border-0 roun class=" chocolate"ded">
-                  <div class="pt-4 pb-2 card-header bg-transparent border-bottom-0">Changing the Rules (Politics)</div>
-                  <div class="card-body">
-                     <p>Every rule in SJG exists through the democratic agreement of the players. Players may loan each
-                        other money, form specific agreements, and even create new rules. If any player whose turn it is
-                        wishes to add, eliminate or change a rule, that player may forfeit their turn to propose a rule
-                        and call a vote. With a simple majority affirming it, the game rule is adopted.</p>
+               <div class="col-12 card-container mb-4 rules-politics">
+                  <div class="card border-0 roun class=" chocolate"ded">
+                     <div class="pt-4 pb-2 card-header bg-transparent border-bottom-0">Changing the Rules (Politics)
+                     </div>
+                     <div class="card-body">
+                        <p>Every rule in SJG exists through the democratic agreement of the players. Players may loan
+                           each
+                           other money, form specific agreements, and even create new rules. If any player whose turn it
+                           is
+                           wishes to add, eliminate or change a rule, that player may forfeit their turn to propose a
+                           rule
+                           and call a vote. With a simple majority affirming it, the game rule is adopted.</p>
 
-                     <p>A proposed rule should pertain to all players, and not simply the person making the rule.
-                        Consider the following rule proposed by an Unemployed player:</p>
+                        <p>A proposed rule should pertain to all players, and not simply the person making the rule.
+                           Consider the following rule proposed by an Unemployed player:</p>
 
-                     <p class="alert alert-danger">
-                        <strong><i class="fad fa-frown-open mr-2"></i>BAD</strong><br />
-                        I propose that each payday, the rich players all have to pay me half their salary.
-                     </p>
+                        <p class="alert alert-danger">
+                           <strong><i class="fad fa-frown-open mr-2"></i>BAD</strong><br />
+                           I propose that each payday, the rich players all have to pay me half their salary.
+                        </p>
 
-                     <p>This rule seems vague &mdash; what is a "rich" player? It’s not a valid rule, nor is likely to
-                        win the simple majority of votes to pass. If the player wants to fight the economic injustice
-                        she feels, she might try:</p>
+                        <p>This rule seems vague &mdash; what is a "rich" player? It’s not a valid rule, nor is likely
+                           to
+                           win the simple majority of votes to pass. If the player wants to fight the economic injustice
+                           she feels, she might try:</p>
 
-                     <p class="alert alert-success">
-                        <strong><i class="fad fa-laugh mr-2"></i>BETTER</strong><br />
-                        I propose that Owners &mdash; whose earning potential is disproportionately larger than
-                        unemployed and employees &mdash; subsidize non-owner payments for Flint Water and Enron
-                        Electric, charging us only $20 each for Flint Water and Enron Electric each payday.
-                     </p>
+                        <p class="alert alert-success">
+                           <strong><i class="fad fa-laugh mr-2"></i>BETTER</strong><br />
+                           I propose that Owners &mdash; whose earning potential is disproportionately larger than
+                           unemployed and employees &mdash; subsidize non-owner payments for Flint Water and Enron
+                           Electric, charging us only $20 each for Flint Water and Enron Electric each payday.
+                        </p>
 
-                     <p>This rule proposal is likely to be more successful because it offers a persuasive rationale and
-                        because it reduces the value of the Owner’s utilities, rather than removing their value
-                        entirely. This rule would benefit Managers directly, and a Manager might support such a rule.
-                     </p>
+                        <p>This rule proposal is likely to be more successful because it offers a persuasive rationale
+                           and
+                           because it reduces the value of the Owner’s utilities, rather than removing their value
+                           entirely. This rule would benefit Managers directly, and a Manager might support such a rule.
+                        </p>
+                     </div>
                   </div>
                </div>
-            </div>
 
-            <div class="col-12 card-container mb-4 rules-change-cards">
-               <div class="card border-0 rounded">
-                  <div class="pt-4 pb-2 card-header bg-transparent border-bottom-0">Change Cards</div>
-                  <div class="card-body">
-                     <p>Players landing on any Change square must draw a card from the Change Cards deck. Read the card
-                        aloud to the other players and follow the instructions. Some Change Cards work in a player's
-                        favor, others against.</p>
-                     <p class="alert alert-info"><i class="fad fa-search mr-2"></i><strong>Read
-                           Closely</strong><br />Most cards apply only to specific roles. Read the card
-                        closely to discover which roles the card applies to, and any additional special instructions.
-                     </p>
+               <div class="col-12 card-container mb-4 rules-change-cards">
+                  <div class="card border-0 rounded">
+                     <div class="pt-4 pb-2 card-header bg-transparent border-bottom-0">Change Cards</div>
+                     <div class="card-body">
+                        <p>Players landing on any Change square must draw a card from the Change Cards deck. Read the
+                           card
+                           aloud to the other players and follow the instructions. Some Change Cards work in a player's
+                           favor, others against.</p>
+                        <p class="alert alert-info"><i class="fad fa-search mr-2"></i><strong>Read
+                              Closely</strong><br />Most cards apply only to specific roles. Read the card
+                           closely to discover which roles the card applies to, and any additional special instructions.
+                        </p>
+                     </div>
                   </div>
                </div>
-            </div>
 
-            <div class="col-12 card-container mb-4 rules-tokens">
-               <div class="card border-0 rounded">
-                  <div class="pt-4 pb-2 card-header bg-transparent border-bottom-0">Tokens</div>
-                  <div class="card-body">
-                     <ul class="list-unstyled mt-3" id="role-tokens">
-                        <li class="media mb-3 border-bottom pb-3">
-                           <img alt="image of unemployed token" src="img/role-tokens/unemployed-role-token.svg"
-                              class="mr-4 mb-4 border-0 rounded-0 d-sm-block d-md-inline-block" />
-                           <div class="media-body">
-                              <h5 class="mt-1">Unemployed</h5>
-                              Caught by the social safety net, the Unemployed person receives food, medical, and other
-                              forms of minimal assistance from the state and federal governments. This player rolls a
-                              red 4-sided die (<i class="fad fa-fw fa-dice-d4 unemployed-red"></i>) for movement and
-                              receives $200 each time passing payday.
-                           </div>
-                        </li>
-                        <li class="media mb-3 border-bottom pb-3">
-                           <img alt="image of employee token" src="img/role-tokens/employee-role-token.svg"
-                              class="mr-4 mb-4 border-0 rounded-0 d-sm-block d-md-inline-block" />
-                           <div class="media-body">
-                              <h5 class="mt-1">Employee</h5>
-                              Thanks to skill in a trade or earned through obtaining a college degree, Employees are
-                              happy to have a job in this economy. They live above the poverty line, but may live
-                              paycheck to paycheck unless they are both disciplined and adept at managing their own
-                              meagre finances. This player rolls a green 6-sided die (<i
-                                 class="fad fa-fw fa-dice-d6 employee-green"></i>) for movement
-                              and receives $500 each time passing payday.
-                           </div>
-                        </li>
-                        <li class="media mb-3 border-bottom pb-3">
-                           <img alt="image of manager token" src="img/role-tokens/manager-role-token.svg"
-                              class="mr-4 mb-4 border-0 rounded-0 d-sm-block d-md-inline-block" />
-                           <div class="media-body">
-                              <h5 class="mt-1">Manager</h5>
-                              Thanks to experience in a field, a graduate degree or other professional development, a
-                              manager is an employee who has ascended to a position of leadership. This player rolls a
-                              purple 8-sided die (<i class="fad fa-fw fa-dice-d8 manager-purple"></i>) for movement and
-                              receives $1,000 each time passing payday.
-                           </div>
-                        </li>
-                        <li class="media mb-3 border-bottom pb-3">
-                           <img alt="image of owner token" src="img/role-tokens/owner-role-token.svg"
-                              class="mr-4 mb-4 border-0 rounded-0 d-sm-block d-md-inline-block" />
-                           <div class="media-body">
-                              <h5 class="mt-1">Owner</h5>
-                              Owing to the vagaries of fate or perhaps an arduous struggle upwards, this role represents
-                              the wealthiest class in the game. This player rolls a blue 10-sided die (<i
-                                 class="fad fa-fw fa-dice-d10 owner-blue"></i>) for movement and receives $3,000 each
-                              time passing payday.
-                           </div>
-                        </li>
-                        <li class="media mb-3 border-bottom pb-3">
-                           <img alt="image of military token" src="img/role-tokens/military-token.svg"
-                              class="mr-4 mb-4 border-0 rounded-0 d-sm-block d-md-inline-block" />
-                           <div class="media-body">
-                              <h5 class="mt-1">Military Token</h5>
-                              The player places the military token on her Role Card (until she next passes Payday) as a
-                              reminder that she is actively serving in the military, and must roll a six-sided die on
-                              her turn (in addition to her movement roll) to see if she is killed in combat.
-                           </div>
-                        </li>
-                        <li class="media mb-3">
-                           <img alt="image of house token" src="img/role-tokens/house-token.svg"
-                              class="mr-4 mb-4 border-0 rounded-0 d-sm-block d-md-inline-block" />
-                           <div class="media-body">
-                              <h5 class="mt-1">House Tokens</h5>
-                              The player places one-, two-, or three-house token on any property she improves.
-                           </div>
-                        </li>
-                     </ul>
-                  </div>
-               </div>
-            </div>
-
-            <div class="col-12 card-container mb-4 rules-squares">
-               <div class="card border-0 rounded">
-                  <div class="pt-4 pb-2 card-header bg-transparent border-bottom-0">Squares</div>
-                  <div class="card-body">
-                     <ul class="list-unstyled mt-3" id="squares">
-                        <li class="media mb-3 border-bottom pb-3">
-                           <img alt="image of payday square" src="img/squares/payday-square.svg"
-                              class="mr-4 mb-4 border-0 rounded-0 d-sm-block d-md-inline-block" />
-                           <div class="media-body bg-white rules-payday">
-                              <h5 class="mt-1">Payday</h5>
-                              <p>Each player receives her payday salary at the beginning of the game, and each time when
-                                 landing upon or passing through the Payday square.</p>
-                           </div>
-                        </li>
-                        <li class="media mb-3 border-bottom pb-3">
-                           <img alt="image of college square" src="img/squares/go-to-college-square.svg"
-                              class="mr-4 mb-4 border-0 rounded-0 d-sm-block d-md-inline-block" />
-                           <div class="media-body">
-                              <h5 class="mt-1">Go to College</h5>
-
-                              <p>When passing through this square, Unemployed and Employees may choose to stop on this
-                                 square and attend college. Managers and Owners will have already attended college.</p>
-
-                              <ul>
-                                 <li><strong>If Unemployed</strong> &mdash; The player pays $2,000 to the bank for her
-                                    undergraduate degree and immediately becomes an Employee.</li>
-                                 <li><strong>If an Employee</strong> &mdash; The player pays $1,000 to the bank for her
-                                    graduate degree and immediately becomes a Manager.</li>
-                              </ul>
-
-                              <p class="mt-3">Players may apply only <em>once</em> for financial aid by rolling a
-                                 six-sided die:</p>
-
-                              <div class="table-responsive">
-                                 <table class="table table-bordered table-striped">
-                                    <thead class="thead-dark">
-                                       <tr>
-                                          <th class="w-25 text-center">Roll</th>
-                                          <th class="w-75">Result</th>
-                                       </tr>
-                                    </thead>
-                                    <tbody>
-                                       <tr>
-                                          <td class="text-center">1-2</td>
-                                          <td>Rejected</td>
-                                       </tr>
-                                       <tr>
-                                          <td class="text-center">3-5</td>
-                                          <td>Partial Scholarship. Tuition reduced by half.</td>
-                                       </tr>
-                                       <tr>
-                                          <td class="text-center">6</td>
-                                          <td>Full ride. Tuition waived.</td>
-                                       </tr>
-                                    </tbody>
-                                 </table>
+               <div class="col-12 card-container mb-4 rules-tokens">
+                  <div class="card border-0 rounded">
+                     <div class="pt-4 pb-2 card-header bg-transparent border-bottom-0">Tokens</div>
+                     <div class="card-body">
+                        <ul class="list-unstyled mt-3" id="role-tokens">
+                           <li class="media mb-3 border-bottom pb-3">
+                              <img alt="image of unemployed token" src="img/role-tokens/unemployed-role-token.svg"
+                                 class="mr-4 mb-4 border-0 rounded-0 d-sm-block d-md-inline-block" />
+                              <div class="media-body">
+                                 <h5 class="mt-1">Unemployed</h5>
+                                 Caught by the social safety net, the Unemployed person receives food, medical, and
+                                 other
+                                 forms of minimal assistance from the state and federal governments. This player rolls a
+                                 red 4-sided die (<i class="fad fa-fw fa-dice-d4 unemployed-red"></i>) for movement and
+                                 receives $200 each time passing payday.
                               </div>
-                           </div>
-                        </li>
-                        <li class="media mb-3 border-bottom pb-3">
-                           <img alt="image of military square" src="img/squares/join-the-military-square.svg"
-                              class="mr-4 mb-4 border-0 rounded-0 d-sm-block d-md-inline-block" />
-                           <div class="media-body">
-                              <h5 class="mt-1">Join the Military</h5>
-
-                              <p>When joining the Military, player places the Military Token on her Role Card. When
-                                 passing through this square, Unemployed and Employees may choose to stop on this square
-                                 and join the military, with the following results:</p>
-
-                              <p><strong>For the rest of the game:</strong></p>
-                              <ul class="mb-3">
-                                 <li><strong>Wages</strong> &mdash; If Unemployed, the player immediately becomes an
-                                    Employee (enlisted). If an Employee, the player immediately becomes a Manager
-                                    (officer).</li>
-                                 <li><strong>GI Bill</strong> &mdash; Any future college tuition paid is reduced by
-                                    half.</li>
-                                 <li><strong>VA Benefits</strong> &mdash; Any future hospital bills paid are reduced to
-                                    $50.</li>
-                              </ul>
-
-                              <p><strong></strong>While Actively Serving (until player next passes through the Payday
-                                 square):</p>
-
-                              <ul class="mb-3">
-                                 <li><strong>Movement</strong> &mdash; The player subtracts 1 from her movement roll
-                                    each turn.</li>
-                                 <li><strong>In Harm’s Way</strong> &mdash; Player must roll a 6-sided die each turn in
-                                    addition to her movement roll. If she rolls a 1, she must roll again. If she then
-                                    rolls a 1 she is killed in combat. Her country thanks her for her service.</li>
-                              </ul>
-                           </div>
-                        </li>
-                        <li class="media mb-3 border-bottom pb-3">
-                           <img alt="image of visit the hospital square" src="img/squares/visit-the-hospital-square.svg"
-                              class="mr-4 mb-4 border-0 rounded-0 d-sm-block d-md-inline-block" />
-                           <div class="media-body">
-                              <h5 class="mt-1">Visit the Hospital</h5>
-                              <p>When landing on this square, players must pay out of pocket in medical bills.
-                                 Unemployed players pay $400. Other players pay less according to their role cards. If
-                                 the player cannot afford this, she may sell any properties or utilities she owns and/or
-                                 request a loan (see "Bankruptcy").</p>
-                           </div>
-                        </li>
-                        <li class="media mb-3 border-bottom pb-3">
-                           <img alt="image of go to jail square" src="img/squares/go-to-jail-square.svg"
-                              class="mr-4 mb-4 border-0 rounded-0 d-sm-block d-md-inline-block" />
-                           <div class="media-body">
-                              <h5 class="mt-1">Go to Jail</h5>
-                              <p>
-                                 When sent to jail, the player must place her token on the Jail space in the middle of
-                                 the board and roll a red 4-sided die (<i
-                                    class="fad fa-fw fa-dice-d4 unemployed-red"></i>) to determine how many turns she
-                                 must miss before moving again. Upon release, the player proceeds to the Payday square
-                                 but receives no pay. Owners avoid jail entirely, as may those who have collected
-                                 certain Change cards.
-                              </p>
-                           </div>
-                        </li>
-                        <li class="media mb-3 border-bottom pb-3">
-                           <img alt="image of back taxes square" src="img/squares/back-taxes-square.svg"
-                              class="mr-4 mb-4 border-0 rounded-0 d-sm-block d-md-inline-block" />
-                           <div class="media-body">
-                              <h5 class="mt-1">Back Taxes</h5>
-                              <p>Any player landing on this square proceeds directly to Payday but receives only half
-                                 their pay, owing the other half to the IRS for back taxes. (Pay the Bank directly.)</p>
-                           </div>
-                        </li>
-                        <li class="media mb-3 border-bottom pb-3">
-                           <img alt="image of enron electric square" src="img/squares/enron-electric-square.svg"
-                              class="mr-4 mb-4 border-0 rounded-0 d-sm-block d-md-inline-block" />
-                           <div class="media-body">
-                              <h5 class="mt-1">Enron Electric</h5>
-                              <p>This privatized energy utility is owned by the Owner at the start of the game, who
-                                 sets, raises and lowers rates at will. The owner of Enron Electric:</p>
-                              <ul>
-                                 <li>Collects $50 from each player each time they pass payday</li>
-                                 <li>Collect $25 from players landing on the square.</li>
-                              </ul>
-                           </div>
-                        </li>
-                        <li class="media mb-3 border-bottom pb-3">
-                           <img alt="image of flint water square" src="img/squares/flint-water-square.svg"
-                              class="mr-4 mb-4 border-0 rounded-0 d-sm-block d-md-inline-block" />
-                           <div class="media-body">
-                              <h5 class="mt-1">Flint Water</h5>
-                              <p>This privatized water utility is owned by the Owner at the start of the game, who sets,
-                                 raises and lowers rates at will. The owner of Enron Electric:</p>
-                              <ul>
-                                 <li>Collects $50 from each player each time they pass payday</li>
-                                 <li>Collect $25 from players landing on the square.</li>
-                              </ul>
-                           </div>
-                        </li>
-                        <li class="media mb-3 border-bottom pb-3">
-                           <img alt="image of froogle square" src="img/squares/froogle-square.svg"
-                              class="mr-4 mb-4 border-0 rounded-0 d-sm-block d-md-inline-block" />
-                           <div class="media-body">
-                              <h5 class="mt-1">Froogle</h5>
-                              <p>This square represents an aggregate of the various telecom services, mobile devices,
-                                 and apps we use to stay digitally socially connected. The owner of Froogle sets, raises
-                                 and lowers rates at will. The owner of Froogle:</p>
-                              <ul>
-                                 <li>Collects $50 from each player each time they pass payday</li>
-                                 <li>Collect $25 from players landing on the square.</li>
-                              </ul>
-                           </div>
-                        </li>
-                        <li class="media mb-3 border-bottom pb-3">
-                           <img alt="image of all properties square" src="img/squares/property-squares.svg"
-                              class="mr-4 mb-4 border-0 rounded-0 d-sm-block d-md-inline-block" />
-                           <div class="media-body">
-                              <h5 class="mt-1">Property Squares</h5>
-                              <p>The Bank issues Title cards to any player who may then collect rent from any player
-                                 landing on the square. As houses are added (up to 3) to any property square, the rent
-                                 increases. A player must first land upon a square to purchase it.</p>
-                           </div>
-                        </li>
-                        <li class="media mb-3 pb-3">
-                           <img alt="image of white house square" src="img/squares/white-house-square.svg"
-                              class="mr-4 mb-4 border-0 rounded-0 d-sm-block d-md-inline-block" />
-                           <div class="media-body">
-                              <h5 class="mt-1">The White House</h5>
-                              <p>
-                                 When an Owner lands on this square, she should 1) give a short stump speech outlining
-                                 which rules she will change from the list below, and 2) call a vote. If a majority of
-                                 players vote affirmatively, the player becomes the President for that turn. Once
-                                 president, she formally declares any rule changes. As in real life, the new rules may
-                                 or may not be exactly what she
-                                 promised in her stump speech. These are the areas in which she may create rules:
-                              </p>
-
-                              <ul>
-                                 <li><strong>Government Bailout</strong> &mdash; The President may set rates for players
-                                    landing on the Enron Electric and Flint Water squares.</li>
-                                 <li><strong>Affordable Care</strong> &mdash; The President may set rates for players
-                                    landing on the Hospital square.</li>
-                                 <li>N<strong>et Neutrality</strong> &mdash; The President may set the rates for players
-                                    landing on the froogle square.</li>
-                                 <li><strong>Presidential Pardons</strong> &mdash; The president may set the number of
-                                    rounds players spend in jail or free a player currently in jail.</li>
-                                 <li><strong>Bring the Troops Home</strong> &mdash; The president may remove any player
-                                    under active service in the military from ‘Harm’s Way’ (eliminating the need for
-                                    that player to roll a 6-sided die).</li>
-                              </ul>
-                           </div>
-                        </li>
-                     </ul>
+                           </li>
+                           <li class="media mb-3 border-bottom pb-3">
+                              <img alt="image of employee token" src="img/role-tokens/employee-role-token.svg"
+                                 class="mr-4 mb-4 border-0 rounded-0 d-sm-block d-md-inline-block" />
+                              <div class="media-body">
+                                 <h5 class="mt-1">Employee</h5>
+                                 Thanks to skill in a trade or earned through obtaining a college degree, Employees are
+                                 happy to have a job in this economy. They live above the poverty line, but may live
+                                 paycheck to paycheck unless they are both disciplined and adept at managing their own
+                                 meagre finances. This player rolls a green 6-sided die (<i
+                                    class="fad fa-fw fa-dice-d6 employee-green"></i>) for movement
+                                 and receives $500 each time passing payday.
+                              </div>
+                           </li>
+                           <li class="media mb-3 border-bottom pb-3">
+                              <img alt="image of manager token" src="img/role-tokens/manager-role-token.svg"
+                                 class="mr-4 mb-4 border-0 rounded-0 d-sm-block d-md-inline-block" />
+                              <div class="media-body">
+                                 <h5 class="mt-1">Manager</h5>
+                                 Thanks to experience in a field, a graduate degree or other professional development, a
+                                 manager is an employee who has ascended to a position of leadership. This player rolls
+                                 a
+                                 purple 8-sided die (<i class="fad fa-fw fa-dice-d8 manager-purple"></i>) for movement
+                                 and
+                                 receives $1,000 each time passing payday.
+                              </div>
+                           </li>
+                           <li class="media mb-3 border-bottom pb-3">
+                              <img alt="image of owner token" src="img/role-tokens/owner-role-token.svg"
+                                 class="mr-4 mb-4 border-0 rounded-0 d-sm-block d-md-inline-block" />
+                              <div class="media-body">
+                                 <h5 class="mt-1">Owner</h5>
+                                 Owing to the vagaries of fate or perhaps an arduous struggle upwards, this role
+                                 represents
+                                 the wealthiest class in the game. This player rolls a blue 10-sided die (<i
+                                    class="fad fa-fw fa-dice-d10 owner-blue"></i>) for movement and receives $3,000 each
+                                 time passing payday.
+                              </div>
+                           </li>
+                           <li class="media mb-3 border-bottom pb-3">
+                              <img alt="image of military token" src="img/role-tokens/military-token.svg"
+                                 class="mr-4 mb-4 border-0 rounded-0 d-sm-block d-md-inline-block" />
+                              <div class="media-body">
+                                 <h5 class="mt-1">Military Token</h5>
+                                 The player places the military token on her Role Card (until she next passes Payday) as
+                                 a
+                                 reminder that she is actively serving in the military, and must roll a six-sided die on
+                                 her turn (in addition to her movement roll) to see if she is killed in combat.
+                              </div>
+                           </li>
+                           <li class="media mb-3">
+                              <img alt="image of house token" src="img/role-tokens/house-token.svg"
+                                 class="mr-4 mb-4 border-0 rounded-0 d-sm-block d-md-inline-block" />
+                              <div class="media-body">
+                                 <h5 class="mt-1">House Tokens</h5>
+                                 The player places one-, two-, or three-house token on any property she improves.
+                              </div>
+                           </li>
+                        </ul>
+                     </div>
                   </div>
                </div>
-            </div>
 
-            <!-- Footer ------------------------------------------------->
-            <section id="footer"></section>
+               <div class="col-12 card-container mb-4 rules-squares">
+                  <div class="card border-0 rounded">
+                     <div class="pt-4 pb-2 card-header bg-transparent border-bottom-0">Squares</div>
+                     <div class="card-body">
+                        <ul class="list-unstyled mt-3" id="squares">
+                           <li class="media mb-3 border-bottom pb-3">
+                              <img alt="image of payday square" src="img/squares/payday-square.svg"
+                                 class="mr-4 mb-4 border-0 rounded-0 d-sm-block d-md-inline-block" />
+                              <div class="media-body bg-white rules-payday">
+                                 <h5 class="mt-1">Payday</h5>
+                                 <p>Each player receives her payday salary at the beginning of the game, and each time
+                                    when
+                                    landing upon or passing through the Payday square.</p>
+                              </div>
+                           </li>
+                           <li class="media mb-3 border-bottom pb-3">
+                              <img alt="image of college square" src="img/squares/go-to-college-square.svg"
+                                 class="mr-4 mb-4 border-0 rounded-0 d-sm-block d-md-inline-block" />
+                              <div class="media-body">
+                                 <h5 class="mt-1">Go to College</h5>
+
+                                 <p>When passing through this square, Unemployed and Employees may choose to stop on
+                                    this
+                                    square and attend college. Managers and Owners will have already attended college.
+                                 </p>
+
+                                 <ul>
+                                    <li><strong>If Unemployed</strong> &mdash; The player pays $2,000 to the bank for
+                                       her
+                                       undergraduate degree and immediately becomes an Employee.</li>
+                                    <li><strong>If an Employee</strong> &mdash; The player pays $1,000 to the bank for
+                                       her
+                                       graduate degree and immediately becomes a Manager.</li>
+                                 </ul>
+
+                                 <p class="mt-3">Players may apply only <em>once</em> for financial aid by rolling a
+                                    six-sided die:</p>
+
+                                 <div class="table-responsive">
+                                    <table class="table table-bordered table-striped">
+                                       <thead class="thead-dark">
+                                          <tr>
+                                             <th class="w-25 text-center">Roll</th>
+                                             <th class="w-75">Result</th>
+                                          </tr>
+                                       </thead>
+                                       <tbody>
+                                          <tr>
+                                             <td class="text-center">1-2</td>
+                                             <td>Rejected</td>
+                                          </tr>
+                                          <tr>
+                                             <td class="text-center">3-5</td>
+                                             <td>Partial Scholarship. Tuition reduced by half.</td>
+                                          </tr>
+                                          <tr>
+                                             <td class="text-center">6</td>
+                                             <td>Full ride. Tuition waived.</td>
+                                          </tr>
+                                       </tbody>
+                                    </table>
+                                 </div>
+                              </div>
+                           </li>
+                           <li class="media mb-3 border-bottom pb-3">
+                              <img alt="image of military square" src="img/squares/join-the-military-square.svg"
+                                 class="mr-4 mb-4 border-0 rounded-0 d-sm-block d-md-inline-block" />
+                              <div class="media-body">
+                                 <h5 class="mt-1">Join the Military</h5>
+
+                                 <p>When joining the Military, player places the Military Token on her Role Card. When
+                                    passing through this square, Unemployed and Employees may choose to stop on this
+                                    square
+                                    and join the military, with the following results:</p>
+
+                                 <p><strong>For the rest of the game:</strong></p>
+                                 <ul class="mb-3">
+                                    <li><strong>Wages</strong> &mdash; If Unemployed, the player immediately becomes an
+                                       Employee (enlisted). If an Employee, the player immediately becomes a Manager
+                                       (officer).</li>
+                                    <li><strong>GI Bill</strong> &mdash; Any future college tuition paid is reduced by
+                                       half.</li>
+                                    <li><strong>VA Benefits</strong> &mdash; Any future hospital bills paid are reduced
+                                       to
+                                       $50.</li>
+                                 </ul>
+
+                                 <p><strong></strong>While Actively Serving (until player next passes through the Payday
+                                    square):</p>
+
+                                 <ul class="mb-3">
+                                    <li><strong>Movement</strong> &mdash; The player subtracts 1 from her movement roll
+                                       each turn.</li>
+                                    <li><strong>In Harm’s Way</strong> &mdash; Player must roll a 6-sided die each turn
+                                       in
+                                       addition to her movement roll. If she rolls a 1, she must roll again. If she then
+                                       rolls a 1 she is killed in combat. Her country thanks her for her service.</li>
+                                 </ul>
+                              </div>
+                           </li>
+                           <li class="media mb-3 border-bottom pb-3">
+                              <img alt="image of visit the hospital square"
+                                 src="img/squares/visit-the-hospital-square.svg"
+                                 class="mr-4 mb-4 border-0 rounded-0 d-sm-block d-md-inline-block" />
+                              <div class="media-body">
+                                 <h5 class="mt-1">Visit the Hospital</h5>
+                                 <p>When landing on this square, players must pay out of pocket in medical bills.
+                                    Unemployed players pay $400. Other players pay less according to their role cards.
+                                    If
+                                    the player cannot afford this, she may sell any properties or utilities she owns
+                                    and/or
+                                    request a loan (see "Bankruptcy").</p>
+                              </div>
+                           </li>
+                           <li class="media mb-3 border-bottom pb-3">
+                              <img alt="image of go to jail square" src="img/squares/go-to-jail-square.svg"
+                                 class="mr-4 mb-4 border-0 rounded-0 d-sm-block d-md-inline-block" />
+                              <div class="media-body">
+                                 <h5 class="mt-1">Go to Jail</h5>
+                                 <p>
+                                    When sent to jail, the player must place her token on the Jail space in the middle
+                                    of
+                                    the board and roll a red 4-sided die (<i
+                                       class="fad fa-fw fa-dice-d4 unemployed-red"></i>) to determine how many turns she
+                                    must miss before moving again. Upon release, the player proceeds to the Payday
+                                    square
+                                    but receives no pay. Owners avoid jail entirely, as may those who have collected
+                                    certain Change cards.
+                                 </p>
+                              </div>
+                           </li>
+                           <li class="media mb-3 border-bottom pb-3">
+                              <img alt="image of back taxes square" src="img/squares/back-taxes-square.svg"
+                                 class="mr-4 mb-4 border-0 rounded-0 d-sm-block d-md-inline-block" />
+                              <div class="media-body">
+                                 <h5 class="mt-1">Back Taxes</h5>
+                                 <p>Any player landing on this square proceeds directly to Payday but receives only half
+                                    their pay, owing the other half to the IRS for back taxes. (Pay the Bank directly.)
+                                 </p>
+                              </div>
+                           </li>
+                           <li class="media mb-3 border-bottom pb-3">
+                              <img alt="image of enron electric square" src="img/squares/enron-electric-square.svg"
+                                 class="mr-4 mb-4 border-0 rounded-0 d-sm-block d-md-inline-block" />
+                              <div class="media-body">
+                                 <h5 class="mt-1">Enron Electric</h5>
+                                 <p>This privatized energy utility is owned by the Owner at the start of the game, who
+                                    sets, raises and lowers rates at will. The owner of Enron Electric:</p>
+                                 <ul>
+                                    <li>Collects $50 from each player each time they pass payday</li>
+                                    <li>Collect $25 from players landing on the square.</li>
+                                 </ul>
+                              </div>
+                           </li>
+                           <li class="media mb-3 border-bottom pb-3">
+                              <img alt="image of flint water square" src="img/squares/flint-water-square.svg"
+                                 class="mr-4 mb-4 border-0 rounded-0 d-sm-block d-md-inline-block" />
+                              <div class="media-body">
+                                 <h5 class="mt-1">Flint Water</h5>
+                                 <p>This privatized water utility is owned by the Owner at the start of the game, who
+                                    sets,
+                                    raises and lowers rates at will. The owner of Enron Electric:</p>
+                                 <ul>
+                                    <li>Collects $50 from each player each time they pass payday</li>
+                                    <li>Collect $25 from players landing on the square.</li>
+                                 </ul>
+                              </div>
+                           </li>
+                           <li class="media mb-3 border-bottom pb-3">
+                              <img alt="image of froogle square" src="img/squares/froogle-square.svg"
+                                 class="mr-4 mb-4 border-0 rounded-0 d-sm-block d-md-inline-block" />
+                              <div class="media-body">
+                                 <h5 class="mt-1">Froogle</h5>
+                                 <p>This square represents an aggregate of the various telecom services, mobile devices,
+                                    and apps we use to stay digitally socially connected. The owner of Froogle sets,
+                                    raises
+                                    and lowers rates at will. The owner of Froogle:</p>
+                                 <ul>
+                                    <li>Collects $50 from each player each time they pass payday</li>
+                                    <li>Collect $25 from players landing on the square.</li>
+                                 </ul>
+                              </div>
+                           </li>
+                           <li class="media mb-3 border-bottom pb-3">
+                              <img alt="image of all properties square" src="img/squares/property-squares.svg"
+                                 class="mr-4 mb-4 border-0 rounded-0 d-sm-block d-md-inline-block" />
+                              <div class="media-body">
+                                 <h5 class="mt-1">Property Squares</h5>
+                                 <p>The Bank issues Title cards to any player who may then collect rent from any player
+                                    landing on the square. As houses are added (up to 3) to any property square, the
+                                    rent
+                                    increases. A player must first land upon a square to purchase it.</p>
+                              </div>
+                           </li>
+                           <li class="media mb-3 pb-3">
+                              <img alt="image of white house square" src="img/squares/white-house-square.svg"
+                                 class="mr-4 mb-4 border-0 rounded-0 d-sm-block d-md-inline-block" />
+                              <div class="media-body">
+                                 <h5 class="mt-1">The White House</h5>
+                                 <p>
+                                    When an Owner lands on this square, she should 1) give a short stump speech
+                                    outlining
+                                    which rules she will change from the list below, and 2) call a vote. If a majority
+                                    of
+                                    players vote affirmatively, the player becomes the President for that turn. Once
+                                    president, she formally declares any rule changes. As in real life, the new rules
+                                    may
+                                    or may not be exactly what she
+                                    promised in her stump speech. These are the areas in which she may create rules:
+                                 </p>
+
+                                 <ul>
+                                    <li><strong>Government Bailout</strong> &mdash; The President may set rates for
+                                       players
+                                       landing on the Enron Electric and Flint Water squares.</li>
+                                    <li><strong>Affordable Care</strong> &mdash; The President may set rates for players
+                                       landing on the Hospital square.</li>
+                                    <li>N<strong>et Neutrality</strong> &mdash; The President may set the rates for
+                                       players
+                                       landing on the froogle square.</li>
+                                    <li><strong>Presidential Pardons</strong> &mdash; The president may set the number
+                                       of
+                                       rounds players spend in jail or free a player currently in jail.</li>
+                                    <li><strong>Bring the Troops Home</strong> &mdash; The president may remove any
+                                       player
+                                       under active service in the military from ‘Harm’s Way’ (eliminating the need for
+                                       that player to roll a 6-sided die).</li>
+                                 </ul>
+                              </div>
+                           </li>
+                        </ul>
+                     </div>
+                  </div>
+               </div>
+
+               <!-- Footer ------------------------------------------------->
+               <section id="footer"></section>
+            </div>
+            <!-- col-sm-12 -->
          </div>
-         <!-- col-sm-12 -->
-      </div>
-      <!-- row -->
-   </main>
+         <!-- row -->
+      </main>
 
-   <!-- Non-affiliation disclaimer Modal -->
+      <!-- Non-affiliation disclaimer Modal -->
 
-   <div class="modal fade " id="modal-affiliation" tabindex="-1" role="dialog" aria-labelledby="modal-affiliation-title"
-      aria-hidden="true">
-      <div class="modal-dialog modal-scrollable modal-dialog-centered" role="document">
-         <div class="modal-content">
-            <div class="modal-header">
-               <h5 class="modal-affiliation-title" id="modal-title">Non-affiliation Disclaimer</h5>
-               <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                  <span aria-hidden="true">×</span>
-               </button>
-            </div>
-            <div class="modal-body">
-               <p><span class="text-uppercase">The social justice board game is in no way affiliated,
-                     associated, authorized, sponsored by, endorsed by, or in any way officially connected with hasbro,
-                     inc., any of its subsidiaries or its affiliates, or with any of the monopoly trademarks. the social
-                     justice game represents an educational parody* of the monopoly game and more generally of
-                     capitalism.</span></p>
+      <div class="modal fade " id="modal-affiliation" tabindex="-1" role="dialog"
+         aria-labelledby="modal-affiliation-title" aria-hidden="true">
+         <div class="modal-dialog modal-scrollable modal-dialog-centered" role="document">
+            <div class="modal-content">
+               <div class="modal-header">
+                  <h5 class="modal-affiliation-title" id="modal-title">Non-affiliation Disclaimer</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                     <span aria-hidden="true">×</span>
+                  </button>
+               </div>
+               <div class="modal-body">
+                  <p><span class="text-uppercase">The social justice board game is in no way affiliated,
+                        associated, authorized, sponsored by, endorsed by, or in any way officially connected with
+                        hasbro,
+                        inc., any of its subsidiaries or its affiliates, or with any of the monopoly trademarks. the
+                        social
+                        justice game represents an educational parody* of the monopoly game and more generally of
+                        capitalism.</span></p>
 
-               <p>* A parody is a form of protected speech under the First Amendment. As used here specifically, parody
-                  is a form of social commentary.</p>
+                  <p>* A parody is a form of protected speech under the First Amendment. As used here specifically,
+                     parody
+                     is a form of social commentary.</p>
 
+               </div>
             </div>
          </div>
       </div>
-   </div>
 
 
 
@@ -582,34 +634,34 @@
 
 
 
-   <!-- jquery JS minified -->
-   <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+      <!-- jquery JS minified -->
+      <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
 
-   <!-- jquery ui -->
-   <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.13.2/jquery-ui.min.js"
-      integrity="sha512-57oZ/vW8ANMjR/KQ6Be9v/+/h6bq9/l3f0Oc7vn6qMqyhvPd1cvKBRWWpzu0QoneImqr2SkmO4MSqU+RpHom3Q=="
-      crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+      <!-- jquery ui -->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.13.2/jquery-ui.min.js"
+         integrity="sha512-57oZ/vW8ANMjR/KQ6Be9v/+/h6bq9/l3f0Oc7vn6qMqyhvPd1cvKBRWWpzu0QoneImqr2SkmO4MSqU+RpHom3Q=="
+         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
-   <!-- popper minified -->
-   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-      crossorigin="anonymous"></script>
+      <!-- popper minified -->
+      <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+         integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+         crossorigin="anonymous"></script>
 
-   <!-- bootstrap JS minified -->
-   <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.2/js/bootstrap.min.js"
-      integrity="sha512-7rusk8kGPFynZWu26OKbTeI+QPoYchtxsmPeBqkHIEXJxeun4yJ4ISYe7C6sz9wdxeE1Gk3VxsIWgCZTc+vX3g=="
-      crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+      <!-- bootstrap JS minified -->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.2/js/bootstrap.min.js"
+         integrity="sha512-7rusk8kGPFynZWu26OKbTeI+QPoYchtxsmPeBqkHIEXJxeun4yJ4ISYe7C6sz9wdxeE1Gk3VxsIWgCZTc+vX3g=="
+         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
-   <!-- Your Javascript -->
-   <script src="js/main.js"></script>
-   <script src="js/rules.js"></script>
+      <!-- Your Javascript -->
+      <script src="js/main.js"></script>
+      <script src="js/rules.js"></script>
 
-   <script>
-      $(function () {
-         // Page scripts here
-      });
-      // document.ready closes
-   </script>
-</body>
+      <script>
+         $(function () {
+            // Page scripts here
+         });
+         // document.ready closes
+      </script>
+   </body>
 
 </html>

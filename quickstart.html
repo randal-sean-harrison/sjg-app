@@ -1,241 +1,238 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
 
-<head>
-   <meta charset="utf-8" />
-   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+   <head>
+      <meta charset="utf-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-   <!-- Google Analytics -->
+      <!-- Google Analytics -->
 
-   <link rel="icon" href="img/favicons/favicon.ico" sizes="any" />
-   <!-- 32×32 -->
-   <link rel="icon" href="img/favicons/icon.svg" type="image/svg+xml" />
-   <link rel="apple-touch-icon" href="img/favicons/apple-touch-icon.png" />
-   <!-- 180×180 -->
-   <link rel="manifest" href="img/favicons/manifest.webmanifest" />
+      <link rel="icon" href="img/favicons/favicon.ico" sizes="any" />
+      <!-- 32×32 -->
+      <link rel="icon" href="img/favicons/icon.svg" type="image/svg+xml" />
+      <link rel="apple-touch-icon" href="img/favicons/apple-touch-icon.png" />
+      <!-- 180×180 -->
+      <link rel="manifest" href="img/favicons/manifest.webmanifest" />
 
-   <!-- jQuery UI css -->
-   <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css" />
+      <!-- jQuery UI css -->
+      <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css" />
 
-   <!-- Bootstrap CSS -->
-   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
-      integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous" />
+      <!-- Bootstrap CSS -->
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+         integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous" />
 
-   <link rel="preconnect" href="https://fonts.googleapis.com" />
-   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-   <link
-      href="https://fonts.googleapis.com/css2?family=Albert+Sans:ital,wght@0,300;0,400;0,600;1,400&family=Leckerli+One&display=swap"
-      rel="stylesheet" />
+      <link rel="preconnect" href="https://fonts.googleapis.com" />
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+      <link
+         href="https://fonts.googleapis.com/css2?family=Albert+Sans:ital,wght@0,300;0,400;0,600;1,400&family=Leckerli+One&display=swap"
+         rel="stylesheet" />
 
-   <!-- Fontawesome icons -->
-   <script src="https://kit.fontawesome.com/0b466e618c.js" crossorigin="anonymous"></script>
+      <!-- Fontawesome icons -->
+      <script src="https://kit.fontawesome.com/0b466e618c.js" crossorigin="anonymous"></script>
 
-   <!-- Main local styles -->
-   <link rel="stylesheet" href="css/main.css" />
+      <!-- Main local styles -->
+      <link rel="stylesheet" href="css/main.css" />
 
-   <style>
-      .card-header h3 {
-         font-size: 1.5rem;
-         color: var(--chocolate);
-      }
+      <style>
+         .card-header h3 {
+            font-size: 1.5rem;
+            color: var(--chocolate);
+         }
 
-      .input-group-text {
-         background: transparent !important;
-      }
+         .input-group-text {
+            background: transparent !important;
+         }
 
-      .form-control {
-         border-left: none;
-      }
+         .form-control {
+            border-left: none;
+         }
 
-      .badge-manager {
-         background: var(--manager-purple);
-      }
+         .badge-manager {
+            background: var(--manager-purple);
+         }
 
-      .name {
-         font-size: 1.2rem;
-         font-weight: bold;
-      }
-   </style>
+         .name {
+            font-size: 1.2rem;
+            font-weight: bold;
+         }
+      </style>
 
-   <title>Social Justice Game</title>
-</head>
+      <title>Social Justice Game</title>
+   </head>
 
-<body>
-   <!-- Main content here -->
-   <header>
-      <img src="img/mobile-header.png" class="img-fluid" alt="Social Justice Game logo" />
-      <div class="bg-light p-1">
-         <h2 class="chocolate text-center mt-3 mb-2 display-4">Quickstart</h2>
-      </div>
-   </header>
+   <body>
+      <!-- Main content here -->
+      <header></header>
 
-   <main id="wrapper" class="container-fluid m-0 p-3">
-      <!-- content here -->
-      <div class="row">
-         <div class="col-sm-12">
-            <div class="card border-0 bg-white mt-3 p-3" id="select-players-card">
-               <div class="py-2 card-header bg-transparent border-bottom-0 chocolate">
-                  <h3><i class="fa-regular fa-circle-1 fa-fw mr-2"></i>Enter Players</h3>
+      <main id="wrapper" class="container-fluid m-0 p-3">
+         <!-- content here -->
+         <div class="row">
+            <div class="col-sm-12">
+               <div class="card border-0 bg-white mt-3 p-3" id="select-players-card">
+                  <div class="py-2 card-header bg-transparent border-bottom-0 chocolate">
+                     <h3><i class="fa-regular fa-circle-1 fa-fw mr-2"></i>Enter Players</h3>
+                  </div>
+                  <div class="card-body" id="select-students-card">
+                     <!-- Enter player's names -->
+                     <div class="alert alert-info mb-3">
+                        <p>
+                           <em>Player roles are chosen randomly. Choose <strong>one player</strong> to enter all 4-6
+                              players' names below.</em>
+                        </p>
+                        <!-- Link to modal for why only 6 names -->
+                        <p class="mt-n2 mb-0 mr-2 bright-blue"><a role="button" data-toggle="modal"
+                              data-target="#six-players-modal">Six-player limit?</a></p>
+                     </div>
+
+                     <!-- Incorrect number of players alert -->
+                     <div class="alert alert-danger d-none" role="alert" id="too-few-players-alert"><i
+                           class="fa-regular fa-hexagon-exclamation mr-3 fa-fw fa-lg"></i>Enter at least 4 players</div>
+
+                     <div class="form-group border-0">
+                        <div class="input-group">
+                           <div class="input-group-prepend">
+                              <div class="input-group-text"><i class="fa-light fa-circle-1 fa-fw fa-2x"></i></div>
+                           </div>
+                           <input type="text" class="form-control form-control-lg" name="player-1" id="player-1"
+                              placeholder="player name" />
+                        </div>
+                     </div>
+                     <div class="form-group">
+                        <div class="input-group">
+                           <div class="input-group-prepend">
+                              <div class="input-group-text"><i class="fa-light fa-circle-2 fa-fw fa-2x"></i></div>
+                           </div>
+                           <input type="text" class="form-control form-control-lg" name="player-2" id="player-2"
+                              placeholder="player name" />
+                        </div>
+                     </div>
+                     <div class="form-group">
+                        <div class="input-group">
+                           <div class="input-group-prepend">
+                              <div class="input-group-text"><i class="fa-light fa-circle-3 fa-fw fa-2x"></i></div>
+                           </div>
+                           <input type="text" class="form-control form-control-lg" name="player-3" id="player-3"
+                              placeholder="player name" />
+                        </div>
+                     </div>
+                     <div class="form-group">
+                        <div class="input-group">
+                           <div class="input-group-prepend">
+                              <div class="input-group-text"><i class="fa-light fa-circle-4 fa-fw fa-2x"></i></div>
+                           </div>
+                           <input type="text" class="form-control form-control-lg" name="player-4" id="player-4"
+                              placeholder="player name" />
+                        </div>
+                     </div>
+                     <div class="form-group">
+                        <div class="input-group">
+                           <div class="input-group-prepend">
+                              <div class="input-group-text"><i class="fa-light fa-circle-5 fa-fw fa-2x"></i></div>
+                           </div>
+                           <input type="text" class="form-control form-control-lg" name="player-5" id="player-5"
+                              placeholder="player name" />
+                        </div>
+                     </div>
+                     <div class="form-group">
+                        <div class="input-group">
+                           <div class="input-group-prepend">
+                              <div class="input-group-text"><i class="fa-light fa-circle-6 fa-fw fa-2x"></i></div>
+                           </div>
+                           <input type="text" class="form-control form-control-lg" name="player-6" id="player-6"
+                              placeholder="player name" />
+                        </div>
+                     </div>
+
+                     <!-- Processing buttons -->
+                     <div class="mt-4 text-center">
+                        <button type="button" id="roles-randomize-button" class="btn btn-primary btn-lg mr-1"><i
+                              class="fa-light fa-shuffle mr-2"></i>Randomize</button>
+                        <button type="button" class="btn btn-light btn-lg text-primary" id="roles-cancel-button"><i
+                              class="fa-light fa-rotate-right mr-2"></i>Reset</button>
+                     </div>
+                  </div>
                </div>
-               <div class="card-body" id="select-students-card">
-                  <!-- Enter player's names -->
-                  <div class="alert alert-info mb-3">
-                     <p>
-                        <em>Player roles are chosen randomly. Choose <strong>one player</strong> to enter all 4-6
-                           players' names below.</em>
-                     </p>
-                     <!-- Link to modal for why only 6 names -->
-                     <p class="mt-n2 mb-0 mr-2 bright-blue"><a role="button" data-toggle="modal"
-                           data-target="#six-players-modal">Six-player limit?</a></p>
+               <!-- card -->
+
+               <!-- Assign Roles Card -->
+               <div class="card border-0 bg-white mt-3 p-3 d-none" id="assign-roles-card">
+                  <div
+                     class="py-2 card-header border-0 bg-transparent chocolate d-flex justify-content-between align-items-center">
+                     <h3><i class="fa-regular fa-circle-1 fa-fw mr-2"></i>Assign Roles</h3>
+                     <!-- <p class="chocolate"><i class="fa-regular fa-fw fa-2x fa-users"></i></p> -->
                   </div>
 
-                  <!-- Incorrect number of players alert -->
-                  <div class="alert alert-danger d-none" role="alert" id="too-few-players-alert"><i
-                        class="fa-regular fa-hexagon-exclamation mr-3 fa-fw fa-lg"></i>Enter at least 4 players</div>
+                  <ul class="list-group" id="roles-list"></ul>
 
-                  <div class="form-group border-0">
-                     <div class="input-group">
-                        <div class="input-group-prepend">
-                           <div class="input-group-text"><i class="fa-light fa-circle-1 fa-fw fa-2x"></i></div>
-                        </div>
-                        <input type="text" class="form-control form-control-lg" name="player-1" id="player-1"
-                           placeholder="player name" />
-                     </div>
-                  </div>
-                  <div class="form-group">
-                     <div class="input-group">
-                        <div class="input-group-prepend">
-                           <div class="input-group-text"><i class="fa-light fa-circle-2 fa-fw fa-2x"></i></div>
-                        </div>
-                        <input type="text" class="form-control form-control-lg" name="player-2" id="player-2"
-                           placeholder="player name" />
-                     </div>
-                  </div>
-                  <div class="form-group">
-                     <div class="input-group">
-                        <div class="input-group-prepend">
-                           <div class="input-group-text"><i class="fa-light fa-circle-3 fa-fw fa-2x"></i></div>
-                        </div>
-                        <input type="text" class="form-control form-control-lg" name="player-3" id="player-3"
-                           placeholder="player name" />
-                     </div>
-                  </div>
-                  <div class="form-group">
-                     <div class="input-group">
-                        <div class="input-group-prepend">
-                           <div class="input-group-text"><i class="fa-light fa-circle-4 fa-fw fa-2x"></i></div>
-                        </div>
-                        <input type="text" class="form-control form-control-lg" name="player-4" id="player-4"
-                           placeholder="player name" />
-                     </div>
-                  </div>
-                  <div class="form-group">
-                     <div class="input-group">
-                        <div class="input-group-prepend">
-                           <div class="input-group-text"><i class="fa-light fa-circle-5 fa-fw fa-2x"></i></div>
-                        </div>
-                        <input type="text" class="form-control form-control-lg" name="player-5" id="player-5"
-                           placeholder="player name" />
-                     </div>
-                  </div>
-                  <div class="form-group">
-                     <div class="input-group">
-                        <div class="input-group-prepend">
-                           <div class="input-group-text"><i class="fa-light fa-circle-6 fa-fw fa-2x"></i></div>
-                        </div>
-                        <input type="text" class="form-control form-control-lg" name="player-6" id="player-6"
-                           placeholder="player name" />
-                     </div>
-                  </div>
+                  <hr />
+                  <p class="text-center">
+                     <button type="button" class="btn btn-light btn-lg text-primary mt-0 w-50" id="start-over-button"><i
+                           class="fa-light fa-rotate-right mr-2"></i>Re-roll?</button>
+                  </p>
+               </div>
+               <!-- .card -->
 
-                  <!-- Processing buttons -->
-                  <div class="mt-4 text-center">
-                     <button type="button" id="roles-randomize-button" class="btn btn-primary btn-lg mr-1"><i
-                           class="fa-light fa-shuffle mr-2"></i>Randomize</button>
-                     <button type="button" class="btn btn-light btn-lg text-primary" id="roles-cancel-button"><i
-                           class="fa-light fa-rotate-right mr-2"></i>Reset</button>
+               <div class="card border-0 bg-white mt-3 p-3 d-none" id="start-play-card">
+                  <div class="py-2 card-header border-0 bg-transparent border-bottom chocolate">
+                     <h3><i class="fa-regular fa-circle-2 fa-fw mr-2"></i>Begin Play</h3>
                   </div>
+                  <p class="px-3 mt-2 mb-1">Place all tokens on the Payday square.</p>
+                  <hr>
+                  <p class="px-3 pt-0">The unemployed character moves first, with turns moving clockwise around the
+                     table
+                     after
+                     that.</p>
+
                </div>
             </div>
-            <!-- card -->
+            <!-- .col-sm-12 -->
+         </div>
+         <!-- row -->
 
-            <!-- Assign Roles Card -->
-            <div class="card border-0 bg-white mt-3 p-3 d-none" id="assign-roles-card">
-               <div
-                  class="py-2 card-header border-0 bg-transparent chocolate d-flex justify-content-between align-items-center">
-                  <h3><i class="fa-regular fa-circle-1 fa-fw mr-2"></i>Assign Roles</h3>
-                  <!-- <p class="chocolate"><i class="fa-regular fa-fw fa-2x fa-users"></i></p> -->
+         <!-- Load footer dynamically -->
+         <section id="footer"></section>
+      </main>
+
+      <!-- Modal explaining choice of 6 players -->
+      <div class="modal fade ml-2" id="six-players-modal" tabindex="-1" role="dialog"
+         aria-labelledby="six-players-modal-title" aria-hidden="true">
+         <div class="modal-dialog modal-sm modal-dialog-centered" role="document">
+            <div class="modal-content">
+               <div class="modal-header border-0 pb-0">
+                  <h5 class="six-players-modal-title chocolate" id="modal-title">4-6 players?</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                     <span aria-hidden="true" class="bright-blue"><i class="fa-light fa-xmark fa-fw fa-lg"></i></span>
+                  </button>
                </div>
-
-               <ul class="list-group" id="roles-list"></ul>
-
-               <hr />
-               <p class="text-center">
-                  <button type="button" class="btn btn-light btn-lg text-primary mt-0 w-50" id="start-over-button"><i
-                        class="fa-light fa-rotate-right mr-2"></i>Re-roll?</button>
-               </p>
-            </div>
-            <!-- .card -->
-
-            <div class="card border-0 bg-white mt-3 p-3 d-none" id="start-play-card">
-               <div class="py-2 card-header border-0 bg-transparent border-bottom chocolate">
-                  <h3><i class="fa-regular fa-circle-2 fa-fw mr-2"></i>Begin Play</h3>
-               </div>
-               <p class="px-3 mt-2 mb-1">Place all tokens on the Payday square.</p>
-               <hr>
-               <p class="px-3 pt-0">The unemployed character moves first, with turns moving clockwise around the table
-                  after
-                  that.</p>
-
+               <div class="modal-body p-4">The optimal number of players is 4. Playing with less than 4 or more than 6
+                  players, play quality likely diminishes. If you must add more than 6 players, you might alternate
+                  between
+                  adding additional Unemployed and Employee players, as you see fit.</div>
             </div>
          </div>
-         <!-- .col-sm-12 -->
       </div>
-      <!-- row -->
 
-      <!-- Load footer dynamically -->
-      <section id="footer"></section>
-   </main>
+      <!-- jquery JS minified -->
+      <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
 
-   <!-- Modal explaining choice of 6 players -->
-   <div class="modal fade ml-2" id="six-players-modal" tabindex="-1" role="dialog"
-      aria-labelledby="six-players-modal-title" aria-hidden="true">
-      <div class="modal-dialog modal-sm modal-dialog-centered" role="document">
-         <div class="modal-content">
-            <div class="modal-header border-0 pb-0">
-               <h5 class="six-players-modal-title chocolate" id="modal-title">4-6 players?</h5>
-               <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                  <span aria-hidden="true" class="bright-blue"><i class="fa-light fa-xmark fa-fw fa-lg"></i></span>
-               </button>
-            </div>
-            <div class="modal-body p-4">The optimal number of players is 4. Playing with less than 4 or more than 6
-               players, play quality likely diminishes. If you must add more than 6 players, you might alternate between
-               adding additional Unemployed and Employee players, as you see fit.</div>
-         </div>
-      </div>
-   </div>
+      <!-- jquery ui -->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.13.2/jquery-ui.min.js"
+         integrity="sha512-57oZ/vW8ANMjR/KQ6Be9v/+/h6bq9/l3f0Oc7vn6qMqyhvPd1cvKBRWWpzu0QoneImqr2SkmO4MSqU+RpHom3Q=="
+         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
-   <!-- jquery JS minified -->
-   <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+      <!-- popper minified -->
+      <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+         integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+         crossorigin="anonymous"></script>
 
-   <!-- jquery ui -->
-   <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.13.2/jquery-ui.min.js"
-      integrity="sha512-57oZ/vW8ANMjR/KQ6Be9v/+/h6bq9/l3f0Oc7vn6qMqyhvPd1cvKBRWWpzu0QoneImqr2SkmO4MSqU+RpHom3Q=="
-      crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+      <!-- bootstrap JS minified -->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.2/js/bootstrap.min.js"
+         integrity="sha512-7rusk8kGPFynZWu26OKbTeI+QPoYchtxsmPeBqkHIEXJxeun4yJ4ISYe7C6sz9wdxeE1Gk3VxsIWgCZTc+vX3g=="
+         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
-   <!-- popper minified -->
-   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-      crossorigin="anonymous"></script>
-
-   <!-- bootstrap JS minified -->
-   <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.2/js/bootstrap.min.js"
-      integrity="sha512-7rusk8kGPFynZWu26OKbTeI+QPoYchtxsmPeBqkHIEXJxeun4yJ4ISYe7C6sz9wdxeE1Gk3VxsIWgCZTc+vX3g=="
-      crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-
-   <!-- Your Javascript -->
-   <script src="js/main.js"></script>
-   <script src="js/quickstart.js"></script>
-</body>
+      <!-- Your Javascript -->
+      <script src="js/main.js"></script>
+      <script src="js/quickstart.js"></script>
+   </body>
 
 </html>
