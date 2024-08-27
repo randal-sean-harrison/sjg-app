@@ -24,6 +24,7 @@
 
 #die-roll-result {
   z-index: 1000;
+  border-radius: 90px !important;
 }
 
 #die-roll-result span {
@@ -32,7 +33,7 @@
 }
 
 .hoisted {
-  margin-top: -17rem;
+  margin-top: -14rem;
   height: 1.5rem;
 }
 
