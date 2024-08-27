@@ -81,6 +81,12 @@ tr {
   box-shadow: none;
 }
 
+/* Gutters ------------------------------- */
+.no-gutters {
+  margin-right: .5rem !important;
+  margin-left: .5rem !important;
+}
+
 /* colors ------------------------------- */
 .bg-red {
   background: var(--unemployed-red);
