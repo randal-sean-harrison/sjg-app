@@ -55,32 +55,32 @@ $(document).ready(function () {
       for (i = 0; i < numPlayers; i++) {
         switch (rolesArray[i]) {
           case "owner":
-            $(".list-group").prepend('<li class="list-group-item border-0 p-4"><div class="d-flex justify-content-between align-items-center"><h5 class="name"><span class="owner-blue">' + playerArray[i] + '</span></h5><span class="badge badge-pill border-0 badge-primary py-2 mr-0">Owner</span></div><div><ul class="pt-3 pl-0 ml-0 no-bullet-list"><li class="border-bottom py-2"><i class="fa-sharp fa-solid fa-dollar-sign owner-blue fa-fw mr-2"></i>$3,000 salary from bank</li><li class="border-bottom py-2"><i class="fa-sharp fa-solid fa-circle-user owner-blue fa-fw mr-2"></i>Uses blue token &amp; role card</li><li class="border-bottom py-2"><i class="fa-solid fa-dice-d10 owner-blue mr-2 fa-fw"></i>Moves w/ 10-sided dice</li><li class="py-2"><i class="fa-solid fa-house owner-blue mr-2 fa-fw"></i>Owns Enron Electric &amp; Flint Water already</li></ul></li>');
+            $(".list-group").prepend('<li class="list-group-item border-0 p-4"><div class="d-flex justify-content-between align-items-center"><h5 class="name"><span class="owner-blue">' + playerArray[i] + '</span></h5><span class="badge badge-pill border-0 badge-primary py-2 mr-0">Owner</span></div><div><ul class="pt-3 pl-0 ml-0 no-bullet-list"><li class="border-bottom py-2"><i class="fa-sharp fa-solid fa-dollar-sign owner-blue fa-fw mr-2"></i>Collect $3,000 each payday</li><li class="border-bottom py-2"><i class="fa-sharp fa-solid fa-circle-user owner-blue fa-fw mr-2"></i>Uses blue token &amp; role card</li><li class="border-bottom py-2"><i class="fa-solid fa-dice-d10 owner-blue mr-2 fa-fw"></i>Moves w/ 10-sided dice</li><li class="py-2"><i class="fa-solid fa-house-circle-xmark mr-2 fa-fw owner-blue"></i>MAY NOT own Froogle.com</li><li class="py-2"><i class="fa-solid fa-house owner-blue mr-2 fa-fw"></i><i class="fa-solid fa-house owner-blue mr-2 fa-fw"></i>Owns Enron Electric + Flint Water</li></ul></li>');
             break;
 
           case "manager":
-            $(".list-group").prepend('<li class="list-group-item bg-alice-blue border-0 p-4"><div class="d-flex justify-content-between align-items-center"><h5 class="name"><span class="manager-purple">' + playerArray[i] + '</span></h5><span class="text-white badge badge-pill border-0 badge-manager py-2 mr-0">Manager</span></div><div><ul class="pt-3 pl-0 ml-0 no-bullet-list"><li class="border-bottom py-2"><i class="fa-sharp fa-solid fa-dollar-sign manager-purple mr-2 fa-fw"></i>$1,000 salary from bank</li><li class="border-bottom py-2"><i class="fa-sharp fa-solid fa-circle-user manager-purple mr-2 fa-fw"></i>Uses purple token &amp; role card</li><li class="border-bottom py-2"><i class="fa-solid fa-dice-d8 manager-purple mr-2 fa-fw"></i>Moves w/ 8-sided dice</li><li class="py-2"><i class="fa-solid fa-piggy-bank manager-purple mr-2 fa-fw"></i><i class="fa-solid fa-house mr-2 fa-fw manager-purple"></i>Manages the bank &amp; realty</li></ul></li>');
+            $(".list-group").prepend('<li class="list-group-item bg-alice-blue border-0 p-4"><div class="d-flex justify-content-between align-items-center"><h5 class="name"><span class="manager-purple">' + playerArray[i] + '</span></h5><span class="text-white badge badge-pill border-0 badge-manager py-2 mr-0">Manager</span></div><div><ul class="pt-3 pl-0 ml-0 no-bullet-list"><li class="border-bottom py-2"><i class="fa-sharp fa-solid fa-dollar-sign manager-purple mr-2 fa-fw"></i>Collect $1,000 each payday</li><li class="border-bottom py-2"><i class="fa-sharp fa-solid fa-circle-user manager-purple mr-2 fa-fw"></i>Uses purple token &amp; role card</li><li class="border-bottom py-2"><i class="fa-solid fa-dice-d8 manager-purple mr-2 fa-fw"></i>Moves w/ 8-sided dice</li><li class="py-2"><i class="fa-solid fa-piggy-bank manager-purple mr-2 fa-fw"></i><i class="fa-solid fa-house-flag manager-purple mr-2 fa-fw"></i>Manages the bank &amp; realty</li></ul></li>');
             break;
 
           case "employee":
-            $(".list-group").prepend('<li class="list-group-item border-0 p-4"><div class="d-flex justify-content-between align-items-center"><h5 class="name"><span class="employee-green">' + playerArray[i] + '</span></h5><span class="badge badge-pill border-0 badge-success py-2 mr-0">Employee</span></div><div><ul class="pt-3 pl-0 ml-0 no-bullet-list"><li class="border-bottom py-2"><i class="fa-sharp fa-solid fa-dollar-sign employee-green mr-2 fa-fw"></i>$500 salary from bank</li><li class="border-bottom py-2"><i class="fa-sharp fa-solid fa-circle-user employee-green mr-2 fa-fw"></i>Uses green token &amp; role card</li><li class="py-2"><i class="fa-solid fa-dice-d6 employee-green mr-2 fa-fw"></i>Moves w/ 6-sided dice</li></ul></li>');
+            $(".list-group").prepend('<li class="list-group-item border-0 p-4"><div class="d-flex justify-content-between align-items-center"><h5 class="name"><span class="employee-green">' + playerArray[i] + '</span></h5><span class="badge badge-pill border-0 badge-success py-2 mr-0">Employee</span></div><div><ul class="pt-3 pl-0 ml-0 no-bullet-list"><li class="border-bottom py-2"><i class="fa-sharp fa-solid fa-dollar-sign employee-green mr-2 fa-fw"></i>Collect $500 each payday</li><li class="border-bottom py-2"><i class="fa-sharp fa-solid fa-circle-user employee-green mr-2 fa-fw"></i>Uses green token &amp; role card</li><li class="py-2"><i class="fa-solid fa-dice-d6 employee-green mr-2 fa-fw"></i>Moves w/ 6-sided dice</li></ul></li>');
             break;
 
           case "unemployed":
-            $(".list-group").prepend('<li class="list-group-item bg-alice-blue border-0 p-4"><div class="d-flex justify-content-between align-items-center"><h5 class="name"><span class="unemployed-red">' + playerArray[i] + '</span></h5><span class="badge badge-pill border-0 badge-danger py-2 mr-0">Unemployed</span></div><div><ul class="pt-3 pl-0 ml-0 no-bullet-list"><li class="border-bottom py-2"><i class="fa-sharp fa-solid fa-dollar-sign unemployed-red mr-2 fa-fw"></i>$200 salary from bank</li><li class="border-bottom py-2"><i class="fa-sharp fa-solid fa-circle-user unemployed-red mr-2 fa-fw"></i>Uses red token &amp; role card</li><li class="py-2"><i class="fa-solid fa-dice-d4 unemployed-red mr-2 fa-fw"></i>Moves w/ 4-sided dice</li></ul></li>');
+            $(".list-group").prepend('<li class="list-group-item bg-alice-blue border-0 p-4"><div class="d-flex justify-content-between align-items-center"><h5 class="name"><span class="unemployed-red">' + playerArray[i] + '</span></h5><span class="badge badge-pill border-0 badge-danger py-2 mr-0">Unemployed</span></div><div><ul class="pt-3 pl-0 ml-0 no-bullet-list"><li class="border-bottom py-2"><i class="fa-sharp fa-solid fa-dollar-sign unemployed-red mr-2 fa-fw"></i>Collect $200 each payday</li><li class="border-bottom py-2"><i class="fa-sharp fa-solid fa-circle-user unemployed-red mr-2 fa-fw"></i>Uses red token &amp; role card</li><li class="py-2"><i class="fa-solid fa-dice-d4 unemployed-red mr-2 fa-fw"></i>Moves w/ 4-sided dice</li></ul></li>');
             break;
         }
       }
     } else {
       $("#too-few-players-alert").removeClass("d-none");
-      
+
     }
   });
 
-// re-roll button
-$("#start-over-button").on("click", function(){
-      location.reload(false);
-});
+  // re-roll button
+  $("#start-over-button").on("click", function () {
+    location.reload(false);
+  });
 
 });
 // document.ready

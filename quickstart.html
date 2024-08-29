@@ -65,21 +65,33 @@
          <!-- content here -->
          <div class="row">
             <div class="col-sm-12">
+
+
+               <div class="card border-0 bg-white mt-3 p-3">
+                  <div class="py-2 card-header border-0 bg-transparent border-bottom chocolate">
+                     <h3><i class="fa-regular fa-circle-1 fa-fw mr-2"></i>Place Change Cards</h3>
+                  </div>
+                  <p class="px-3 mt-2 mb-1">Shuffle the <strong>Change Cards</strong> and place them on the board.
+                  </p>
+               </div>
+
+
+
+
+
                <div class="card border-0 bg-white mt-3 p-3" id="select-players-card">
                   <div class="py-2 card-header bg-transparent border-bottom-0 chocolate">
-                     <h3><i class="fa-regular fa-circle-1 fa-fw mr-2"></i>Enter Players</h3>
+                     <h3><i class="fa-regular fa-circle-2 fa-fw mr-2"></i>Assign Player Roles</h3>
                   </div>
                   <div class="card-body" id="select-students-card">
                      <!-- Enter player's names -->
-                     <div class="alert alert-info mb-3">
-                        <p>
-                           <em>Player roles are chosen randomly. Choose <strong>one player</strong> to enter all 4-6
-                              players' names below.</em>
-                        </p>
-                        <!-- Link to modal for why only 6 names -->
-                        <p class="mt-n2 mb-0 mr-2 bright-blue"><a role="button" data-toggle="modal"
-                              data-target="#six-players-modal">Six-player limit?</a></p>
-                     </div>
+                     <p class="mt-n2 mb-3">
+                        Player roles are chosen randomly. Choose <strong>one player</strong> to enter all 4-6
+                        players' names below.
+                     </p>
+                     <!-- Link to modal for why only 6 names -->
+                     <p class="mt-n2 mb-5 mr-2 bright-blue"><a role="button" data-toggle="modal"
+                           data-target="#six-players-modal">Six-player limit?</a></p>
 
                      <!-- Incorrect number of players alert -->
                      <div class="alert alert-danger d-none" role="alert" id="too-few-players-alert"><i
@@ -155,7 +167,7 @@
                <div class="card border-0 bg-white mt-3 p-3 d-none" id="assign-roles-card">
                   <div
                      class="py-2 card-header border-0 bg-transparent chocolate d-flex justify-content-between align-items-center">
-                     <h3><i class="fa-regular fa-circle-1 fa-fw mr-2"></i>Assign Roles</h3>
+                     <h3><i class="fa-regular fa-circle-2 fa-fw mr-2"></i>Assign Player Roles</h3>
                      <!-- <p class="chocolate"><i class="fa-regular fa-fw fa-2x fa-users"></i></p> -->
                   </div>
 
@@ -201,10 +213,12 @@
                      <span aria-hidden="true" class="bright-blue"><i class="fa-light fa-xmark fa-fw fa-lg"></i></span>
                   </button>
                </div>
-               <div class="modal-body p-4">The optimal number of players is 4. Playing with less than 4 or more than 6
-                  players, play quality likely diminishes. If you must add more than 6 players, you might alternate
-                  between
-                  adding additional Unemployed and Employee players, as you see fit.</div>
+               <div class="modal-body p-4">The optimal number of players is 4. Play quality dimishes when
+                  playing with
+                  less than 4 or more than 6
+                  players. If you wish to play with 5 players, add an additional <em>employee</em> role. With 6 players,
+                  add both
+                  an additional <em>employee</em> and <em>unemployed</em> role.</div>
             </div>
          </div>
       </div>
