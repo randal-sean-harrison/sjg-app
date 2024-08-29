@@ -38,10 +38,10 @@ html {
 body {
   box-sizing: border-box;
   font-family: "Figtree", Helvetica, Arial, sans-serif;
-  font-weight: 300;
+  font-weight: 400;
   background: var(--page-bg);
   color: var(--graphite);
-  font-size: 1.05rem;
+  font-size: 1.1rem;
   padding-bottom: 5rem;
 }
 
