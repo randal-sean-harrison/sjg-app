@@ -242,3 +242,10 @@ tr {
   content: "$";
   font-size: 3.5rem;
 }
+
+#page-title-header {
+  font-variant: small-caps;
+  font-size: 2rem;
+  letter-spacing: 3px;
+  color: var(--slate-gray) !important;
+}

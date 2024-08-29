@@ -1,0 +1,31 @@
+# Query: <link rel="icon" href="img/favicons/icon.svg" type="image/svg+xml" />
+# ContextLines: 1
+
+9 results - 9 files
+
+about.html:
+  11        <link rel="apple-touch-icon" href="img/favicons/apple-touch-icon.png" />
+
+dice.html:
+  11        <link rel="apple-touch-icon" href="img/favicons/apple-touch-icon.png" />
+
+faq.html:
+  11        <link rel="apple-touch-icon" href="img/favicons/apple-touch-icon.png" />
+
+index.html:
+  11      <link rel="apple-touch-icon" href="img/favicons/apple-touch-icon.png" />
+
+quickstart.html:
+  11        <link rel="apple-touch-icon" href="img/favicons/apple-touch-icon.png" />
+
+realty.html:
+  11      <link rel="apple-touch-icon" href="img/favicons/apple-touch-icon.png" />
+
+roles.html:
+  11        <link rel="apple-touch-icon" href="img/favicons/apple-touch-icon.png" />
+
+rules.html:
+  11        <link rel="apple-touch-icon" href="img/favicons/apple-touch-icon.png" />
+
+template.html:
+  11        <link rel="apple-touch-icon" href="img/favicons/apple-touch-icon.png" />

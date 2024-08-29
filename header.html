@@ -4,4 +4,22 @@
 <div class="bg-light p-1">
    <h2 class="chocolate text-center mt-3 mb-0">The Social Justice Game</h2>
    <p class="mt-0 text-center trench-blue">A Game About Cents &amp; Sensibility <sup>&reg;</sup></p>
+   <h3 id="page-title-header" class="d-none text-center mb-3 text-italics"></h3>
+
 </div>
+
+<script>
+   $(document).ready(function () {
+
+      // Get the page title for each page
+      var pageTitle = $("body").data("page-title");
+      console.log(pageTitle);
+
+      // Write the page title unless it's the home page
+      if (pageTitle) {
+         $("#page-title-header").text(pageTitle);
+         $("#page-title-header").removeClass("d-none");
+      }
+
+   });
+</script>
