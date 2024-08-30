@@ -147,6 +147,11 @@ tr {
   background: var(--light-blue) !important;
 }
 
+.bg-alice-blue {
+  background: var(--alice-blue) !important;
+}
+
+/* Colors ---------------------------------------------- */
 .unemployed-red {
   color: var(--unemployed-red) !important;
 }
@@ -265,6 +270,10 @@ tr {
 }
 
 /* Accordions --------------------------------------- */
+
+.faq-accordion .card-body {
+  border-top: 1px dashed silver;
+}
 
 /* button transforms */
 .fa-rotate-45 {
