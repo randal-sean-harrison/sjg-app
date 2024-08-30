@@ -1,7 +1,7 @@
 $(document).ready(function () {
   $(document).on("click", "#die-roller .dicey", function () {
     // Get the die clicked on and create random number
-    var dieClickedOn = $(this).data("die");
+    var dieClickedOn = parseInt($(this).data("die"));
     var roll = Math.floor(Math.random() * dieClickedOn) + 1;
 
     // if ($(this).hasClass("bg-green") || $(this).hasClass("bg-blue")) {
@@ -29,7 +29,7 @@ $(document).ready(function () {
       case 4:
         writeEllipses();
         $("#write-unemployed-roll").html("<h1 class='text-white'>" + roll + "</h1>");
-
+        break;
       case 6:
         writeEllipses();
         $("#write-employee-roll").html("<h1 class='text-white'>" + roll + "</h1>");
