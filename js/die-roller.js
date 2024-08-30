@@ -3,41 +3,46 @@ $(document).ready(function () {
     // Get the die clicked on and create random number
     var dieClickedOn = $(this).data("die");
     var roll = Math.floor(Math.random() * dieClickedOn) + 1;
-    // Shake the die
 
-    if ($(this).hasClass("bg-green") || $(this).hasClass("bg-blue")) {
-      $(this).fadeOut(100).fadeIn(100);
-    } else {
-      $(this).fadeOut(100).fadeIn(100);
-    }
+    // if ($(this).hasClass("bg-green") || $(this).hasClass("bg-blue")) {
+    //   $(this).fadeOut(100).fadeIn(100);
+    // } else {
+    //   $(this).fadeOut(100).fadeIn(100);
+    // }
 
     // Fade the die roll results circle
-    $("#die-roll-result span").stop().fadeOut(150).fadeIn(150);
+    // $("#die-roll-result span").stop().fadeOut(150).fadeIn(150);
 
     // Write the roll to the div
-    $("#die-roll-result span").text(roll);
-    console.log(roll);
+    // $("#die-roll-result span").text(roll);
 
     // fade all others but die clicked on
     $(".dicey").addClass("reduced-opacity");
     $(this).removeClass("reduced-opacity");
 
+    function writeEllipses() {
+      $(".dicey").find("div").empty().html("<h1 class='text-center text-white'>&hellip;</h1>");
+    }
+
     // Set the roll color and die wobble
     switch (dieClickedOn) {
       case 4:
-        $("#die-roll-result span").removeClass("reduced-opacity employee-green manager-purple owner-blue").addClass("unemployed-red");
-        break;
+        writeEllipses();
+        $("#write-unemployed-roll").html("<h1 class='text-white'>" + roll + "</h1>");
 
       case 6:
-        $("#die-roll-result span").removeClass("reduced-opacity unemployed-red manager-purple owner-blue").addClass("employee-green");
+        writeEllipses();
+        $("#write-employee-roll").html("<h1 class='text-white'>" + roll + "</h1>");
         break;
 
       case 8:
-        $("#die-roll-result span").removeClass("reduced-opacity employee-green unemployed-red owner-blue").addClass("manager-purple");
+        writeEllipses();
+        $("#write-manager-roll").html("<h1 class='text-white'>" + roll + "</h1>");
         break;
 
       case 10:
-        $("#die-roll-result span").removeClass("reduced-opacity employee-green unemployed-red manager-purple").addClass("owner-blue");
+        writeEllipses();
+        $("#write-owner-roll").html("<h1 class='text-white'>" + roll + "</h1>");
         break;
     }
   });

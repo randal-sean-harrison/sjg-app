@@ -42,10 +42,15 @@
   text-transform: lowercase;
 }
 
-.hoisted {
-  margin-top: -14rem;
-  height: 1.5rem;
+#write-unemployed-roll h1,
+#write-employee-roll h1,
+#write-manager-roll h1,
+#write-owner-roll h1 {
+  font-size: 3.5rem !important;
+  margin-bottom: 1.25rem;
 }
+
+
 
 @media only screen and (max-width: 500px) {
   .dice-variable-font {
